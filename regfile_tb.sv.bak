@@ -1,10 +1,10 @@
 
 
 
-module regfile_tb();
+module testRegister();
 
     reg [15:0] sim_data_in;           // value to be put in write mode
-    reg [2:0] sim_writenum, sim_readnum;  // writeNum: Register number to be put in; readnum: register number to read from
+    reg [2:0] sim_writenum, readnum;  // writeNum: Register number to be put in; readnum: register number to read from
     reg sim_write, clk;               // write: load.
     reg [15:0] sim_data_out;     // Value to be output in read mode
     reg err;
@@ -51,7 +51,7 @@ module regfile_tb();
 
         assert (DUT.R2 == sim_data_in) $display("Passed overwriting R2 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R2);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R2);
             err = 1'b1;
         end 
 
@@ -62,7 +62,7 @@ module regfile_tb();
 
         assert (DUT.R3 == sim_data_in) $display("Passed overwriting R3 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R3);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R3);
             err = 1'b1;
         end 
 
@@ -73,7 +73,7 @@ module regfile_tb();
 
         assert (DUT.R4 == sim_data_in) $display("Passed overwriting R4 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R4);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R4);
             err = 1'b1;
         end 
 
@@ -84,7 +84,7 @@ module regfile_tb();
 
         assert (DUT.R5 == sim_data_in) $display("Passed overwriting R5 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R5);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R5);
             err = 1'b1;
         end 
 
@@ -95,7 +95,7 @@ module regfile_tb();
 
         assert (DUT.R6 == sim_data_in) $display("Passed overwriting R6 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R6);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R6);
             err = 1'b1;
         end 
 
@@ -106,7 +106,7 @@ module regfile_tb();
 
         assert (DUT.R7 == sim_data_in) $display("Passed overwriting R7 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R7);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R7);
             err = 1'b1;
         end 
 
@@ -126,80 +126,80 @@ module regfile_tb();
         #10
 
         //Test reading R0 with value 3
-        sim_readnum = 0; #10;
+        sim_readnum= 0;
         assert (sim_data_out == 3) $display("Passed reading R0 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R0);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R0);
             err = 1'b1;
         end 
 
         #10
 
         //Test reading R1 with value 15
-        sim_readnum = 1; #10;
+        sim_readnum = 1;
         assert (sim_data_out == 15) $display("Passed reading R1 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R1);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R1);
             err = 1'b1;
         end 
 
         #10
 
         //Test reading R2 with value 2000
-        sim_readnum = 2; #10;
+        sim_readnum = 2;
         assert (sim_data_out == 2000) $display("Passed reading R2 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R2);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R1);
             err = 1'b1;
         end 
 
         #10
 
         //Test reading R3 with value 128
-        sim_readnum = 3; #10;
+        sim_readnum = 3;
         assert (sim_data_out == 128) $display("Passed reading R3 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R3);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R3);
             err = 1'b1;
         end 
 
         #10
 
         //Test reading R4 with value 50
-        sim_readnum = 4; #10;
+        sim_readnum = 3;
         assert (sim_data_out == 50) $display("Passed reading R4 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R4);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R4);
             err = 1'b1;
         end 
 
         #10;
 
         //Test reading R5 with value 25
-        sim_readnum = 5; #10;
+        sim_readnum = 5;
         assert (sim_data_out == 25) $display("Passed reading R5 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R5);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R5);
             err = 1'b1;
         end 
 
         #10;
 
         //Test reading R6 with value 250
-        sim_readnum = 6; #10;
+        sim_readnum = 6;
         assert (sim_data_out == 250) $display("Passed reading R6 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R6);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R6);
             err = 1'b1;
         end 
 
         #10;
 
         //Test reading R7 with value 2200
-        sim_readnum = 7; #10;
+        sim_readnum = 7;
         assert (sim_data_out == 2200) $display("Passed reading R7 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R7);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R7);
             err = 1'b1;
         end 
 
@@ -218,7 +218,7 @@ module regfile_tb();
         // Check register value of R1, should be 18
         assert (DUT.R1 == sim_data_in) $display("Passed overwriting R1 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R1);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R1);
             err = 1'b1;
         end 
 
@@ -227,7 +227,7 @@ module regfile_tb();
         // Check read value from R1 (after rising edge)
         assert (sim_data_out == 18) $display("Passed reading R1 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R1);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R1);
             err = 1'b1;
         end 
 
@@ -241,7 +241,7 @@ module regfile_tb();
         //Test trying to overwrite R5 (should not overwrite)
         assert (DUT.R5 == 25) $display("Passed not overwriting R5 with %d", sim_data_in);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_in, DUT.R1);
+            $display ("FAILED, expected %b but got %b", sim_data_in, DUT.R1);
             err = 1'b1;
         end 
 
@@ -250,12 +250,10 @@ module regfile_tb();
         //Test reading R5 (before rising edge)
         assert (sim_data_out == 25) $display("Passed reading R5 with %d", sim_data_out);
         else begin
-            $display ("FAILED, expected %d but got %d", sim_data_out, DUT.R1);
+            $display ("FAILED, expected %b but got %b", sim_data_out, DUT.R1);
             err = 1'b1;
         end 
 
-        assert (err == 0) $display ("Passed all tests");
-        else $display ("FAILED");
         $stop;
     end
 endmodule
