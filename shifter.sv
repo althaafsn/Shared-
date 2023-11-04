@@ -1,9 +1,9 @@
 module shifter(in,shift,sout);
 input [15:0] in;
 input [1:0] shift;
-output [15:0] sout;
+output reg [15:0] sout;
 
-  always @(shift) begin
+  always_comb begin
     case (shift)
       2'b00: sout = in;
       2'b01: sout = {in[14:0], 1'b0};
