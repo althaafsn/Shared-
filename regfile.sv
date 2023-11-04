@@ -78,9 +78,24 @@ module regfile(data_in,writenum,write,readnum,clk,data_out);
     vDFF #(16) reg6 (clk, nextR6, R6);
     vDFF #(16) reg7 (clk, nextR7, R7);
 
-    always @(write || writenum) begin
-      
-      {nextR7, nextR6, nextR5, nextR4, nextR3, nextR2, nextR1, nextR0} = 
+  // LOAD DATA
+  always_comb begin
+    case (readnum)
+      3'b000: data_out = R0;
+      3'b001: data_out = R1;
+      3'b010: data_out = R2;
+      3'b011: data_out = R3;
+      3'b100: data_out = R4;
+      3'b101: data_out = R5;
+      3'b110: data_out = R6;
+      3'b111: data_out = R7;
+      default: data_out = {16{1'bx}};
+    endcase   
+  end 
+
+always_comb begin
+  
+    {nextR7, nextR6, nextR5, nextR4, nextR3, nextR2, nextR1, nextR0} = 
       {R7,R6,R5,R4,R3,R2,R1,R0};
       
       if (write) begin   
@@ -95,22 +110,9 @@ module regfile(data_in,writenum,write,readnum,clk,data_out);
           3'b111: nextR7 = data_in;
         endcase 
       end
-    end
 
-  // LOAD DATA
-  always_comb begin
-    case (readnum)
-      3'b000: data_out = R0;
-      3'b001: data_out = R1;
-      3'b010: data_out = R2;
-      3'b011: data_out = R3;
-      3'b100: data_out = R4;
-      3'b101: data_out = R5;
-      3'b110: data_out = R6;
-      3'b111: data_out = R7;
-      default: data_out = {16{1'bx}};
-    endcase 
-  end 
+end
+
 
 
 

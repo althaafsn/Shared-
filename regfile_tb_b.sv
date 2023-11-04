@@ -61,9 +61,6 @@ module regfile_tb();
         else $display("Failed");
         $stop;
 
-
-
-
     end
 
 
