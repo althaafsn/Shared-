@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5_top
-Sat Nov 04 23:41:50 2023
+Sun Nov 05 13:45:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 04 23:41:50 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 05 13:45:57 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab5_top                                    ;
 ; Top-level Entity Name           ; lab5_top                                    ;
@@ -215,13 +215,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------+
 ; Resource                                    ; Usage                         ;
 +---------------------------------------------+-------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 64                            ;
+; Estimate of Logic utilization (ALMs needed) ; 78                            ;
 ;                                             ;                               ;
-; Combinational ALUT usage for logic          ; 94                            ;
+; Combinational ALUT usage for logic          ; 122                           ;
 ;     -- 7 input functions                    ; 0                             ;
 ;     -- 6 input functions                    ; 25                            ;
 ;     -- 5 input functions                    ; 4                             ;
-;     -- 4 input functions                    ; 31                            ;
+;     -- 4 input functions                    ; 59                            ;
 ;     -- <=3 input functions                  ; 34                            ;
 ;                                             ;                               ;
 ; Dedicated logic registers                   ; 66                            ;
@@ -234,8 +234,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                               ;
 ; Maximum fan-out node                        ; input_iface:IN|vDFF:CTRL|Q[3] ;
 ; Maximum fan-out                             ; 55                            ;
-; Total fan-out                               ; 827                           ;
-; Average fan-out                             ; 2.67                          ;
+; Total fan-out                               ; 967                           ;
+; Average fan-out                             ; 2.86                          ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -244,7 +244,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Entity Name     ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |lab5_top                                       ; 94 (1)              ; 66 (0)                    ; 128               ; 0          ; 67   ; 0            ; |lab5_top                                                                                         ; lab5_top        ; work         ;
+; |lab5_top                                       ; 122 (1)             ; 66 (0)                    ; 128               ; 0          ; 67   ; 0            ; |lab5_top                                                                                         ; lab5_top        ; work         ;
 ;    |datapath:DP|                                ; 84 (37)             ; 49 (0)                    ; 128               ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP                                                                             ; datapath        ; work         ;
 ;       |ALU:ALUModule|                           ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|ALU:ALUModule                                                               ; ALU             ; work         ;
 ;       |regfile:REGFILE|                         ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |lab5_top|datapath:DP|regfile:REGFILE                                                             ; regfile         ; work         ;
@@ -259,6 +259,10 @@ refer to the applicable agreement for further details.
 ;    |input_iface:IN|                             ; 9 (9)               ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN                                                                          ; input_iface     ; work         ;
 ;       |vDFF:CTRL|                               ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:CTRL                                                                ; vDFF            ; work         ;
 ;       |vDFF:DATA|                               ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|input_iface:IN|vDFF:DATA                                                                ; vDFF            ; work         ;
+;    |sseg:H0|                                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|sseg:H0                                                                                 ; sseg            ; work         ;
+;    |sseg:H1|                                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|sseg:H1                                                                                 ; sseg            ; work         ;
+;    |sseg:H2|                                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|sseg:H2                                                                                 ; sseg            ; work         ;
+;    |sseg:H3|                                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5_top|sseg:H3                                                                                 ; sseg            ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -563,24 +567,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 17                          ;
 ;     SLD               ; 16                          ;
 ;     plain             ; 33                          ;
-; arriav_lcell_comb     ; 96                          ;
+; arriav_lcell_comb     ; 127                         ;
 ;     arith             ; 17                          ;
 ;         1 data inputs ; 1                           ;
 ;         4 data inputs ; 14                          ;
 ;         5 data inputs ; 2                           ;
-;     normal            ; 79                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
+;     normal            ; 110                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 17                          ;
-;         4 data inputs ; 17                          ;
+;         4 data inputs ; 45                          ;
 ;         5 data inputs ; 2                           ;
 ;         6 data inputs ; 25                          ;
 ; boundary_port         ; 67                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.40                        ;
-; Average LUT depth     ; 3.18                        ;
+; Average LUT depth     ; 3.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -589,7 +593,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -599,7 +603,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 04 23:41:36 2023
+    Info: Processing started: Sun Nov 05 13:45:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c lab5_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -609,25 +613,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file shifter
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
     Info (12023): Found entity 1: regfile File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/regfile.sv Line: 2
 Info (12021): Found 4 design units, including 4 entities, in source file lab5_top.sv
-    Info (12023): Found entity 1: lab5_top File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 56
-    Info (12023): Found entity 2: input_iface File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 108
-    Info (12023): Found entity 3: vDFF File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 147
-    Info (12023): Found entity 4: sseg File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 165
+    Info (12023): Found entity 1: lab5_top File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 76
+    Info (12023): Found entity 2: input_iface File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 128
+    Info (12023): Found entity 3: vDFF File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 167
+    Info (12023): Found entity 4: sseg File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 185
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
     Info (12023): Found entity 1: datapath File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: ALU File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/alu.sv Line: 1
 Info (12127): Elaborating entity "lab5_top" for the top level hierarchy
-Info (12128): Elaborating entity "input_iface" for hierarchy "input_iface:IN" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 70
-Info (12128): Elaborating entity "vDFF" for hierarchy "input_iface:IN|vDFF:DATA" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 122
-Info (12128): Elaborating entity "vDFF" for hierarchy "input_iface:IN|vDFF:CTRL" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 128
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DP" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 96
+Info (12128): Elaborating entity "input_iface" for hierarchy "input_iface:IN" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 90
+Info (12128): Elaborating entity "vDFF" for hierarchy "input_iface:IN|vDFF:DATA" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 142
+Info (12128): Elaborating entity "vDFF" for hierarchy "input_iface:IN|vDFF:CTRL" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 148
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DP" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 116
 Info (12128): Elaborating entity "shifter" for hierarchy "datapath:DP|shifter:FileShifter" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/datapath.sv Line: 23
 Warning (10230): Verilog HDL assignment warning at shifter.sv(16): truncated value with size 16 to match size of target (15) File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/shifter.sv Line: 16
 Info (12128): Elaborating entity "regfile" for hierarchy "datapath:DP|regfile:REGFILE" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/datapath.sv Line: 24
 Info (12128): Elaborating entity "ALU" for hierarchy "datapath:DP|ALU:ALUModule" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/datapath.sv Line: 25
 Info (12128): Elaborating entity "vDFF" for hierarchy "datapath:DP|vDFF:status_loader" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/datapath.sv Line: 30
-Info (12128): Elaborating entity "sseg" for hierarchy "sseg:H0" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 99
+Info (12128): Elaborating entity "sseg" for hierarchy "sseg:H0" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 119
 Warning (276027): Inferred dual-clock RAM node "datapath:DP|regfile:REGFILE|vDFF:reg0|Q_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "datapath:DP|regfile:REGFILE|vDFF:reg0|Q_rtl_0" 
@@ -664,64 +668,36 @@ Info (12133): Instantiated megafunction "datapath:DP|regfile:REGFILE|vDFF:reg0|a
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hik1.tdf
     Info (12023): Found entity 1: altsyncram_hik1 File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/db/altsyncram_hik1.tdf Line: 27
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 61
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 81
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 57
-    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 57
-    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 57
-Info (21057): Implemented 242 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 77
+    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 77
+    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/UBC/Courses/2023W1/CPEN_211/Lab 5/Shared-/lab5_top.sv Line: 77
+Info (21057): Implemented 270 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 159 logic cells
+    Info (21061): Implemented 187 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Sat Nov 04 23:41:50 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Sun Nov 05 13:45:58 2023
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:26
 
 

@@ -1545,58 +1545,58 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_top|sseg:H0
-in[0] => ~NO_FANOUT~
-in[1] => ~NO_FANOUT~
-in[2] => ~NO_FANOUT~
-in[3] => ~NO_FANOUT~
-segs[0] <= <GND>
-segs[1] <= <VCC>
-segs[2] <= <VCC>
-segs[3] <= <VCC>
-segs[4] <= <GND>
-segs[5] <= <GND>
-segs[6] <= <GND>
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+segs[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_top|sseg:H1
-in[0] => ~NO_FANOUT~
-in[1] => ~NO_FANOUT~
-in[2] => ~NO_FANOUT~
-in[3] => ~NO_FANOUT~
-segs[0] <= <GND>
-segs[1] <= <VCC>
-segs[2] <= <VCC>
-segs[3] <= <VCC>
-segs[4] <= <GND>
-segs[5] <= <GND>
-segs[6] <= <GND>
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+segs[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_top|sseg:H2
-in[0] => ~NO_FANOUT~
-in[1] => ~NO_FANOUT~
-in[2] => ~NO_FANOUT~
-in[3] => ~NO_FANOUT~
-segs[0] <= <GND>
-segs[1] <= <VCC>
-segs[2] <= <VCC>
-segs[3] <= <VCC>
-segs[4] <= <GND>
-segs[5] <= <GND>
-segs[6] <= <GND>
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+segs[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_top|sseg:H3
-in[0] => ~NO_FANOUT~
-in[1] => ~NO_FANOUT~
-in[2] => ~NO_FANOUT~
-in[3] => ~NO_FANOUT~
-segs[0] <= <GND>
-segs[1] <= <VCC>
-segs[2] <= <VCC>
-segs[3] <= <VCC>
-segs[4] <= <GND>
-segs[5] <= <GND>
-segs[6] <= <GND>
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+segs[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

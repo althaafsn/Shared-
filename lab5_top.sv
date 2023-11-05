@@ -1,3 +1,23 @@
+// SSEG encoding
+
+`define ZERO        7'b1000000
+`define ONE         7'b1111001 
+`define TWO         7'b0100100
+`define THREE       7'b0110000
+`define FOUR        7'b0011001
+`define FIVE        7'b0010010
+`define SIX         7'b0000010
+`define SEVEN       7'b1111000
+`define EIGHT       7'b0000000
+`define NINE        7'b0010000
+`define LETTER_A    7'b0001000
+`define LETTER_B    7'b0000011
+`define LETTER_C    7'b1000110
+`define LETTER_D    7'b0100001
+`define LETTER_E    7'b0000110
+`define LETTER_F    7'b0001110
+`define ALL_OFF     7'b1111111
+
 // INSTRUCTIONS:
 //
 // You can use this file to demo your Lab5 on your DE1-SoC.  You should NOT 
@@ -164,7 +184,29 @@ endmodule
 
 module sseg(in,segs);
   input [3:0] in;
-  output [6:0] segs;
+  output reg [6:0] segs;
+
+  always_comb begin
+    segs = `ALL_OFF;  
+    case(in)
+      4'h0: segs = `ZERO;
+      4'h1: segs = `ONE;
+      4'h2: segs = `TWO;
+      4'h3: segs = `THREE;
+      4'h4: segs = `FOUR;
+      4'h5: segs = `FIVE;
+      4'h6: segs = `SIX;
+      4'h7: segs = `SEVEN;
+      4'h8: segs = `EIGHT;
+      4'h9: segs = `NINE;
+      4'hA: segs = `LETTER_A;
+      4'hB: segs = `LETTER_B;
+      4'hC: segs = `LETTER_C;
+      4'hD: segs = `LETTER_D;
+      4'hE: segs = `LETTER_E;
+      4'hF: segs = `LETTER_F;
+    endcase
+  end
 
   // NOTE: The code for sseg below is not complete: You can use your code from
   // Lab4 to fill this in or code from someone else's Lab4.  
@@ -210,7 +252,5 @@ module sseg(in,segs);
   //            13 | d
   //            14 | E
   //            15 | F
-
-  assign segs = 7'b0001110;  // this will output "F" 
 
 endmodule
