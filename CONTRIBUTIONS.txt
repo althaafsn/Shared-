@@ -1,0 +1,11 @@
+Althaaf:
+-Wrote the ALU implementation with Kenrick
+-Wrote the shifter implementation with Kenrick
+-Collaboratively made the datapath implementation (mux and selects)
+-Collaboratively wrote testbenches with Kenrick
+
+Kenrick:
+-Wrote the regfile implementation with Althaaf
+-Collaboratively made the datapath implementation (state machines) 
+-Wrote the assembly code to be translated to datapath_tb for testing the datapath
+-Collaboratively wrote testbenches with Althaaf

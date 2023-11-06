@@ -4,6 +4,7 @@ module ALU(Ain,Bin,ALUop,out,Z);
     output reg [15:0] out;
     output reg Z;
 
+    //Arithmetic Logic Unit calculation
     always_comb begin
         case (ALUop)
             2'b00: out = Ain + Bin;
@@ -12,6 +13,8 @@ module ALU(Ain,Bin,ALUop,out,Z);
             2'b11: out = ~Bin;
             default: out = 16'bx_xxx_xxx_xxx_xxx_xxx;
         endcase
+
+        //Z value calculation
         if (out == 0) begin
             Z = 1;
         end else begin

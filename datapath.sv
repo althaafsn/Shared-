@@ -46,6 +46,7 @@ module datapath (
         A_in_ALU <= A_FF;
       end
 
+      // B sel
       if (bsel == 1'b1) begin
         B_in_ALU <= {11'b0, datapath_in[4:0]};
       end else begin
