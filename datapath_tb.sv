@@ -75,6 +75,8 @@ assign allRegs = {DUT.REGFILE.R7,
 
   // endtask
   
+ 
+   // ALU operations which operates on 2 regs and pust them in dest
   task AritOP;
     input [1:0] OP;
     input [2:0] Dest;
@@ -147,6 +149,7 @@ assign allRegs = {DUT.REGFILE.R7,
 
   endtask
 
+  // ALU operations with immediate values.
   task OP_I;
     input [1:0] OP;
     input [2:0] Dest;
@@ -219,6 +222,7 @@ assign allRegs = {DUT.REGFILE.R7,
   
   endtask
 
+  // Shifting logic
   task LS;
     input [1:0] shift;
     input [2:0] Dest;
@@ -283,6 +287,7 @@ assign allRegs = {DUT.REGFILE.R7,
 
   endtask
 
+  // Move and negate register value
   task MVN;
     input [2:0] Dest;
     input [2:0] Reg;
@@ -396,13 +401,13 @@ assign allRegs = {DUT.REGFILE.R7,
   // ADD R2 R0 R1 // output should be 71                                                           
   // SUB R3 R0 R1 // output should be 29
   // AND R4 R0 R1 // 0000 0000 0011 0010 & 0000 0000 0001 0101 = 0000 0000 0001 0000 
-  // LSR R4 <> R2 1 // R4 = 0000 0000 0000 1010 = 10
+  // LSR R4 R2 1 // R4 = 35;
   // ADD R5 R2 R3 LSL 1 // R5 = R2 + 2R3 = 71 + 58 = 129 
-  // SUB R6 R2 R4 LSR 1 = 71 - 5 = 66
-  // SUB R6 R6 R6 LSL 1  = -66
+  // SUB R6 R2 R4 LSR 1 = 71 - 34/2 = 54
+  // SUB R6 R6 R6 LSL 1  = -54
   // SUB R6 R6 R6 = 0 (Z = 1)
   // MOV R7 6
-  // MVN R7 R7 <>;
+  // MVN R7 R7;
   // ADD R7 R7 #1;
   // ADD R7 R7 #25 // R7 =  19
  

@@ -24,6 +24,7 @@ module datapath (
     regfile REGFILE(data_in_reg, writenum, write, readnum, clk, data_out_reg);
     ALU ALUModule(A_in_ALU, B_in_ALU, ALUop, out_ALU, Z);
     
+    // DFFs for each loader
     vDFF #(16) A_loader(clk & loada, data_out_reg, A_FF);
     vDFF #(16) B_loader(clk & loadb, data_out_reg, B_FF);
     vDFF #(16) C_loader(clk & loadc, out_ALU, datapath_out);
@@ -31,12 +32,14 @@ module datapath (
     
     //Datapath in
     always_comb begin
+      // vsel, checks if the register should accept data_write or result from calculations
       if (vsel == 1'b1) begin
         data_in_reg <= datapath_in;
       end else begin
         data_in_reg <= datapath_out;
       end
 
+      // A sel
       if (asel == 1'b1) begin
         A_in_ALU <= 16'b0;
       end else begin

@@ -20,6 +20,7 @@ module regfile(data_in,writenum,write,readnum,clk,data_out);
 
     reg [15:0] nextR7, nextR6, nextR5, nextR4, nextR3, nextR2, nextR1, nextR0;
 
+    // DFFs for each register
     vDFF #(16) reg0 (clk, nextR0, R0);
     vDFF #(16) reg1 (clk, nextR1, R1);
     vDFF #(16) reg2 (clk, nextR2, R2);
@@ -44,6 +45,7 @@ module regfile(data_in,writenum,write,readnum,clk,data_out);
     endcase   
   end 
 
+// DETERMINE THE DATA TO WRITE IN EACH REG
 always_comb begin
   
     {nextR7, nextR6, nextR5, nextR4, nextR3, nextR2, nextR1, nextR0} = 
