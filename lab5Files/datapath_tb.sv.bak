@@ -1,4 +1,4 @@
-`define NO_SHIFT 2'b00
+g`define NO_SHIFT 2'b00
 `define L_1 2'b01
 `define R_1 2'b10
 `define R_X 2'b11

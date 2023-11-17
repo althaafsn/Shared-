@@ -1,3 +1,9 @@
+`define VSEL_C 2'b00
+`define VSEL_PC 2'b01
+`define VSEL_IMM 2'b10
+`define VSEL_MDATA 2'b11
+
+
 module datapath (
     // clock
     clk,
@@ -6,19 +12,23 @@ module datapath (
     // ALU
     shift, asel, bsel, ALUop, loadc, loads,
     // set register
-    writenum, write, datapath_in,
+    writenum, write, mdata, sximm8, pc, c,
     // output
     Z_out, datapath_out );
 
     input clk, vsel, loada, loadb, loadc, loads, write, asel, bsel;
     input [1:0] ALUop, shift; 
     input [2:0] readnum, writenum;
-    input [15:0] datapath_in; 
+    input [15:0] mdata, sximm8, pc, c;
+    input [4:0] imm5;
     output reg Z_out;
+    output reg [2:0] status_out;
     output reg [15:0] datapath_out;
 
+    wire sximm5 = {11{imm5[4]}, imm5}
     reg [15:0] data_in_reg, data_out_reg, A_FF, B_FF, s_out, A_in_ALU, B_in_ALU, out_ALU;
-    reg Z;
+    reg Z, V, N;
+    wire status = {Z, V, N};
     
     shifter FileShifter(B_FF, shift, s_out);
     regfile REGFILE(data_in_reg, writenum, write, readnum, clk, data_out_reg);
@@ -30,6 +40,17 @@ module datapath (
     vDFF #(1) status_loader(clk & loads, Z, Z_out);
     
     //Datapath in
+
+    always_comb VSEL_MUX begin
+        case(vsel):
+            `VSEL_C: data_in_reg = 
+            `VSEL_PC: data_in_reg = 
+            `VSEL_IMM: data_in_reg = 
+            `VSEL_MDATA: data_in_reg = 
+        endcase
+    end
+
+
     always_comb begin
       if (vsel == 1'b1) begin
         data_in_reg <= datapath_in;
@@ -44,7 +65,7 @@ module datapath (
       end
 
       if (bsel == 1'b1) begin
-        B_in_ALU <= {11'b0, datapath_in[4:0]};
+        B_in_ALU <= sximm5;
       end else begin
         B_in_ALU <= s_out;
       end
