@@ -21,23 +21,21 @@ module datapath (
     input [2:0] readnum, writenum;
     input [15:0] mdata, sximm8, pc, c;
     input [4:0] imm5;
-    output reg Z_out;
     output reg [2:0] status_out;
     output reg [15:0] datapath_out;
 
     wire sximm5 = {11{imm5[4]}, imm5}
     reg [15:0] data_in_reg, data_out_reg, A_FF, B_FF, s_out, A_in_ALU, B_in_ALU, out_ALU;
-    reg Z, V, N;
-    wire status = {Z, V, N};
-    
+    reg [2:0] status; 
+
     shifter FileShifter(B_FF, shift, s_out);
     regfile REGFILE(data_in_reg, writenum, write, readnum, clk, data_out_reg);
-    ALU ALUModule(A_in_ALU, B_in_ALU, ALUop, out_ALU, Z);
+    ALU ALUModule(A_in_ALU, B_in_ALU, ALUop, out_ALU, status);
     
     vDFF #(16) A_loader(clk & loada, data_out_reg, A_FF);
     vDFF #(16) B_loader(clk & loadb, data_out_reg, B_FF);
     vDFF #(16) C_loader(clk & loadc, out_ALU, datapath_out);
-    vDFF #(1) status_loader(clk & loads, Z, Z_out);
+    vDFF #(3) status_loader(clk & loads, status, status_out);
     
     //Datapath in
 
