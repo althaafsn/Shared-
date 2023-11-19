@@ -1,3 +1,23 @@
+// SSEG encoding
+
+`define ZERO        7'b1000000
+`define ONE         7'b1111001 
+`define TWO         7'b0100100
+`define THREE       7'b0110000
+`define FOUR        7'b0011001
+`define FIVE        7'b0010010
+`define SIX         7'b0000010
+`define SEVEN       7'b1111000
+`define EIGHT       7'b0000000
+`define NINE        7'b0010000
+`define LETTER_A    7'b0001000
+`define LETTER_B    7'b0000011
+`define LETTER_C    7'b1000110
+`define LETTER_D    7'b0100001
+`define LETTER_E    7'b0000110
+`define LETTER_F    7'b0001110
+`define ALL_OFF     7'b1111111
+
 // INSTRUCTIONS:
 //
 // You can use this file to demo your Lab6 on your DE1-SoC.  
@@ -56,7 +76,7 @@ module lab6_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,CLOCK_50);
   assign HEX5[3] = ~V;
 
   // fill in sseg to display 4-bits in hexidecimal 0,1,2...9,A,B,C,D,E,F
-  sseg H0(out[3:0],   HEX0);
+  sseg H0(outw[3:0],   HEX0);
   sseg H1(out[7:4],   HEX1);
   sseg H2(out[11:8],  HEX2);
   sseg H3(out[15:12], HEX3);

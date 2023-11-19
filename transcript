@@ -1,0 +1,1953 @@
+# Compile of cpu_tb_gate.sv failed with 1 errors.
+# Compile of cpu.vo was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of cpu_tb_gate.sv was successful.
+# Compile of cpu.vo was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.cpuTest
+# vsim -gui work.cpuTest 
+# Start time: 14:06:00 on Nov 19,2023
+# Loading sv_std.std
+# Loading work.cpuTest
+# Loading work.cpu
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'cpuTest' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 422
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 438
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 454
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 470
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 486
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 502
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 518
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 534
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 550
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 566
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 582
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 598
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 614
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 630
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 646
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 662
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 678
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 694
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 710
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 726
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 742
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_clkena' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 753
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 767
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 778
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 789
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 813
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 824
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 843
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 854
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 873
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 884
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 903
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 914
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 933
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 944
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 963
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 987
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1011
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1030
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1054
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1073
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1084
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1108
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1132
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1151
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1175
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1200
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1219
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1243
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1262
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1286
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1305
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1329
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1348
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1372
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1398
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1417
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1441
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1452
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1471
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1482
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1501
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1525
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1536
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1555
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1579
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1590
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1609
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1620
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1639
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1664
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1675
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1694
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1705
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1724
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1735
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1754
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1780
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1791
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1810
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1821
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1840
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1851
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1870
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1896
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1921
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1940
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1964
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 1988
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2007
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2031
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2050
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2075
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2094
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2119
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2143
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2162
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2186
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2205
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2229
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2253
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2272
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2297
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2316
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2342
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2367
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2386
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2410
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2434
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2453
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2472
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2491
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2510
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2529
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2554
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2573
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2597
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2616
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2635
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2654
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2678
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2697
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2716
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2735
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2754
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2773
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2797
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2816
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2835
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2854
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2873
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2897
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2922
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2947
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2972
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 2997
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3022
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3047
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3072
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3097
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3122
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3147
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3172
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3197
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3222
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3247
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3272
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3296
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3315
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3340
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3365
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3390
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3415
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3440
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3465
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3490
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3515
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3540
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3565
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3590
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3615
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3640
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3665
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3690
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3714
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3742
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3761
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3785
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3804
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3823
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3842
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3866
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3885
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3910
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3934
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3953
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3972
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 3991
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4010
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4037
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4062
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4081
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4100
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4126
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4151
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4179
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4198
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4222
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4241
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4265
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4284
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4308
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4327
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4351
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4370
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4395
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4419
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4438
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4462
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4481
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4500
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4519
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4545
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4571
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4590
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4609
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4635
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4660
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4688
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4712
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4731
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4755
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4774
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4798
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4817
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4836
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4860
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4879
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4904
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4923
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4942
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4966
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 4985
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5004
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5030
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5055
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5074
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5093
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5118
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5143
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5171
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5195
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5214
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5238
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5257
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5276
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5295
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5319
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5338
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5362
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5386
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5405
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5424
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5448
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5467
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5486
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5512
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5537
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5556
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5581
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5606
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5634
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5653
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5677
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5696
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5715
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5734
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5753
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5777
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5801
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5820
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5844
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5863
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5882
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5901
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5927
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5952
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5976
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 5995
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6021
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6040
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6065
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6093
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6112
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6136
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6155
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6174
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6193
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6212
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6238
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6262
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6281
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6300
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6319
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6343
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6362
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6388
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6413
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6437
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6456
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6481
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6506
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6534
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6553
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6577
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6596
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6620
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6639
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6658
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6682
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6701
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6725
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6749
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6768
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6787
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6811
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6830
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6854
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6873
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6899
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6924
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6943
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6969
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 6994
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7022
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7041
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7065
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7084
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7103
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7127
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7146
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7171
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7190
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7214
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7233
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7252
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7271
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7295
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7314
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7341
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7367
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7386
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7411
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7435
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7463
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7482
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7506
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7525
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7549
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7568
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7587
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7611
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7630
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7654
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7673
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7692
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7716
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7735
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7754
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7780
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7805
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7824
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7850
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7874
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7902
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7921
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7945
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7964
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 7983
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8002
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8027
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8046
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8070
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8089
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8108
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8127
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8151
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8170
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8196
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8222
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8241
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8260
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8286
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8311
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8339
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8358
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8382
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8401
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8420
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8439
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8458
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8483
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8507
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8526
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8550
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8569
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8588
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8607
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8633
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8659
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8678
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8704
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8729
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8757
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8776
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8800
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8819
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8843
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8862
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8886
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8905
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8929
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8948
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8973
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 8997
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9016
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9035
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9054
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9078
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9097
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9123
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9149
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9168
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9194
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9213
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9237
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9265
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9284
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9308
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9327
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9346
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9365
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9384
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9409
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9428
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9447
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9466
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9485
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9511
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9535
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9554
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9573
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9599
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9624
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9652
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9671
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9695
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9714
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9738
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9757
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9781
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9800
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9819
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9843
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9862
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9886
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9905
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9924
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9943
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9969
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 9994
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10013
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10038
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10062
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10088
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10107
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10131
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10155
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10174
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10198
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10217
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10236
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10260
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10279
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10298
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10317
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10336
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10355
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10381
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10406
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10425
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10449
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10474
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10502
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10521
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10545
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10564
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10590
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10609
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10633
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10657
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10681
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'dffeas' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10706
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# ** Error: (vsim-3033) Instantiation of 'cyclonev_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /cpuTest/DUT File: D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo Line: 10725
+#         Searched libraries:
+#             D:/CPEN 211/New/Shared-/work
+# Error loading design
+# End time: 14:06:01 on Nov 19,2023, Elapsed time: 0:00:01
+# Errors: 485, Warnings: 7
