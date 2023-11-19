@@ -6,7 +6,8 @@ module InstructionDecoder(
     output reg [2:0] Rn,
     output reg [2:0] Rd,
     output reg [1:0] sh,
-    output reg [2:0] Rm
+    output reg [2:0] Rm,
+    output reg [7:0] imm8
 );
     
     assign opcode = instruction[15:13];
@@ -15,10 +16,6 @@ module InstructionDecoder(
     assign Rd = instruction[7:5];
     assign sh = instruction[4:3];
     assign Rm = instruction[2:0];
-
+    assign imm8 = instruction[7:0];
 
 endmodule
-
-// fetch instruction + decode -> fetch register -> ALU -> write to memory -> load -> fetch new 
-
-// 

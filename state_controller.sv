@@ -12,6 +12,10 @@
 `define VSEL_IMM 2'b10
 `define VSEL_MDATA 2'b11
 
+`define SEL_D 3'b100
+`define SEL_N 3'b010
+`define SEL_M 3'b001
+
 module StateController(
     input [3:0] opcode,
     input [2:0] op,
@@ -48,8 +52,7 @@ module StateController(
     assign {loads, loadc, loadb, loada} = allLoad;
     assign {selB, selA} = sel;
     
-
-
+    // STATE TRANSITIONS
     // NOTE: loads run on the next rising edge of clock
     always_ff @(posedge clk) begin
         if (rst) begin
@@ -114,6 +117,7 @@ module StateController(
         endcase
     end
 
+    // DETERMINES OUTPUT OF EACH STATE
     // Output is a Mealy Machine.
     always_comb begin
         // DEFAULT VALUES
@@ -127,23 +131,24 @@ module StateController(
             `S_WAIT: begin
                 w = 1'b1;
             end
-            
+
+            // If is in the ALU state, loadC
             `S_ALU: begin
                 allLoad = 4'b0100;
             end  
 
             `S_GetA: begin
                 allLoad = 4'b0001;
-                nsel = 3'b001;
+                nsel = `SEL_N;
             end 
 
             `S_GetB: begin
                 allLoad = 4'b0010;
-                nsel = 3'b010;
+                nsel = `SEL_M;
             end 
 
             `S_WriteImm: begin
-                nsel = 3'b100;
+                nsel = `SEL_N;
                 vsel = `VSEL_IMM;
                 write = 1'b1;
             end 
