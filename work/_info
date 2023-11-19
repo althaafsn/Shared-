@@ -10,382 +10,392 @@ z2
 cModel Technology
 dD:/UBC/Courses/2023W1/CPEN_211/Lab 5
 vALU
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1700381308
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1700429291
 !i10b 1
-!s100 2ceZDo2?;>Qi`QV`V:E992
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IgV91?JO5L=9?QWBP]Hiln2
+!s100 F<JBgPQZART7_5]CLPL<]1
+IhdLaB2fc3g7z^n552?=zk0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 alu_sv_unit
 S1
-Z3 dD:/CPEN 211/New/Shared-
-Z4 w1700372610
-8D:/CPEN 211/New/Shared-/alu.sv
-FD:/CPEN 211/New/Shared-/alu.sv
-!i122 116
-L0 1 32
-Z5 OV;L;2020.1;71
+Z3 dD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-
+w1700371719
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu.sv
+L0 1
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1700381308.000000
-!s107 D:/CPEN 211/New/Shared-/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/alu.sv|
+Z5 !s108 1700429291.000000
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu.sv|
 !i113 1
-Z7 o-work work -sv
-Z8 tCvgOpt 0
+Z6 o-work work -sv
+Z7 tCvgOpt 0
 n@a@l@u
 vALU_test
 R0
-Z9 !s110 1700381309
-!i10b 1
-!s100 Wn_8ClC7lC8z=FeXHj6b40
 R1
-I6d5QCYiB<ZK?m2Y8WHed61
+!i10b 1
+!s100 i@46NChA^Zc5Rmn8TM<NI3
+Ia104FHLF9>277Q@0Dk_LD2
 R2
+!s105 alu_tb_sv_unit
 S1
 R3
+w1700417155
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu_tb.sv
+L0 6
 R4
-8D:/CPEN 211/New/Shared-/alu_tb.sv
-FD:/CPEN 211/New/Shared-/alu_tb.sv
-!i122 117
-L0 6 198
-R5
 r1
 !s85 0
 31
-R6
-!s107 D:/CPEN 211/New/Shared-/alu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/alu_tb.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/alu_tb.sv|
 !i113 1
+R6
 R7
-R8
 n@a@l@u_test
 vcpu
 R0
-R9
-!i10b 1
-!s100 ^:1U;O:D0<I^zYm2F?d@U3
 R1
-IReDOQV;40?42QKdFmf>eh0
+!i10b 1
+!s100 JU9YTA346HY[CB209k_j]1
+IzKFGHDR@974WXcm_cPUaC1
 R2
+!s105 cpu_sv_unit
 S1
 R3
-Z10 w1700367971
-8D:/CPEN 211/New/Shared-/cpu.sv
-FD:/CPEN 211/New/Shared-/cpu.sv
-!i122 118
-L0 1 6
-R5
+w1700428677
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu.sv
+Z8 L0 11
+R4
 r1
 !s85 0
 31
-Z11 !s108 1700381309.000000
-!s107 D:/CPEN 211/New/Shared-/cpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/cpu.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu.sv|
 !i113 1
+R6
 R7
-R8
+vcpuTest
+R0
+R1
+!i10b 1
+!s100 S;VF1ehholN_AEO`^SBZa2
+I<d=IbTO9JCBZ<hGdP;9Ab1
+R2
+!s105 cpu_tb_sv_unit
+S1
+R3
+w1700429288
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu_tb.sv
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/cpu_tb.sv|
+!i113 1
+R6
+R7
+ncpu@test
 vdatapath
 R0
-R9
-!i10b 1
-!s100 I3V7IX_]6=HHGLVPTPh??1
 R1
-I[F?DCJzJlg<QCWe]fnX0F3
+!i10b 1
+!s100 <8<d7h3^FnIM3WJFPicfI2
+I;`dESPf_KC[YE9=Zmg<ZE3
 R2
+!s105 datapath_sv_unit
 S1
 R3
-w1700381263
-8D:/CPEN 211/New/Shared-/datapath.sv
-FD:/CPEN 211/New/Shared-/datapath.sv
-!i122 119
-L0 12 65
-R5
+w1700386262
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath.sv
+L0 12
+R4
 r1
 !s85 0
 31
-R11
-!s107 D:/CPEN 211/New/Shared-/datapath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/datapath.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath.sv|
 !i113 1
+R6
 R7
-R8
 vdatapath_tb
 R0
-R9
-!i10b 1
-!s100 R0BL@;UK?^T]21h7`<3[W0
 R1
-IDS976QJS3Cd@X6;D7ccmY3
+!i10b 1
+!s100 VPSBXehF1:heojWTdb;>z3
+I0zE^dC:NNkaJ_=NbV8QLb0
 R2
+!s105 datapath_tb_sv_unit
 S1
 R3
-w1700381266
-8D:/CPEN 211/New/Shared-/datapath_tb.sv
-FD:/CPEN 211/New/Shared-/datapath_tb.sv
-!i122 120
-L0 38 430
-R5
+w1700416344
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath_tb.sv
+L0 38
+R4
 r1
 !s85 0
 31
-R11
-!s107 D:/CPEN 211/New/Shared-/datapath_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/datapath_tb.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/datapath_tb.sv|
 !i113 1
+R6
 R7
-R8
 vinput_iface
 R0
-Z12 !s110 1700381310
-!i10b 1
-!s100 bcahR2nb]@BNzVUFB7o]J0
 R1
-I@oJ9FH7o?O9XZPeUTmQmD2
+!i10b 1
+!s100 nE<>iUc1RQoXZ7BTY4A=e1
+IVfR6k>>_U^X8h1?V43;^h0
 R2
+Z9 !s105 lab6_top_sv_unit
 S1
 R3
-R10
-Z13 8D:/CPEN 211/New/Shared-/lab6_top.sv
-Z14 FD:/CPEN 211/New/Shared-/lab6_top.sv
-!i122 123
-L0 68 10
-R5
+Z10 w1700428812
+Z11 8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_top.sv
+Z12 FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_top.sv
+L0 68
+R4
 r1
 !s85 0
 31
-Z15 !s108 1700381310.000000
-Z16 !s107 D:/CPEN 211/New/Shared-/lab6_top.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/lab6_top.sv|
+R5
+Z13 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_top.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_top.sv|
 !i113 1
+R6
 R7
-R8
 vInstructionDecoder
 R0
-R12
-!i10b 1
-!s100 GjVk`?KXRbFnK02j:TcBi2
 R1
-IO`1fc5K;zICIz]NNzKRb50
+!i10b 1
+!s100 9m2k@gRY0DULaQCFLFcUW0
+IS?Eb[Mk@LbiAAF;=e0zm33
 R2
+!s105 instructionDecoder_sv_unit
 S1
 R3
+w1700382686
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/instructionDecoder.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/instructionDecoder.sv
+L0 2
 R4
-8D:/CPEN 211/New/Shared-/instructionDecoder.sv
-FD:/CPEN 211/New/Shared-/instructionDecoder.sv
-!i122 121
-L0 2 19
-R5
 r1
 !s85 0
 31
-R15
-!s107 D:/CPEN 211/New/Shared-/instructionDecoder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/instructionDecoder.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/instructionDecoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/instructionDecoder.sv|
 !i113 1
+R6
 R7
-R8
 n@instruction@decoder
 vlab6_check
 R0
-R12
-!i10b 1
-!s100 i6=A@iaYRoEiMekdkBgFG2
 R1
-I2GM]ZTYZ_hKQa^cNjT2eG0
+!i10b 1
+!s100 Tgf2J]3Ob6:nkO8NcEL0I1
+IE@6igeE`c>:>`ElJmPeH]0
 R2
+!s105 lab6_autograder_check_sv_unit
 S1
 R3
-R10
-8D:/CPEN 211/New/Shared-/lab6_autograder_check.sv
-FD:/CPEN 211/New/Shared-/lab6_autograder_check.sv
-!i122 122
-L0 11 75
-R5
+Z15 w1700010786
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_autograder_check.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_autograder_check.sv
+R8
+R4
 r1
 !s85 0
 31
-R15
-!s107 D:/CPEN 211/New/Shared-/lab6_autograder_check.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/lab6_autograder_check.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_autograder_check.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/lab6_autograder_check.sv|
 !i113 1
+R6
 R7
-R8
 vlab6_top
 R0
-R12
-!i10b 1
-!s100 ]MLKIGR09zzCjShPM59C70
 R1
-IM3eEoa]6?z9Do34Cz0@9^0
+!i10b 1
+!s100 [>Kz[BaFQ3n^A;62HG2^^1
+IV?m?E`oTi<><_Vj`aZfEl0
 R2
+R9
 S1
 R3
 R10
-R13
-R14
-!i122 123
-L0 32 35
-R5
+R11
+R12
+L0 32
+R4
 r1
 !s85 0
 31
-R15
-R16
-R17
+R5
+R13
+R14
 !i113 1
+R6
 R7
-R8
 vregfile
 R0
-R12
-!i10b 1
-!s100 E^UQ]h29`Q88=K?aiKR<Z1
 R1
-I3fRQ[EFZaie3Jl8b9FTJn1
+!i10b 1
+!s100 g_Onz3TV:J>`=lAo9?o[21
+IA=h8aJ14AM7_oVJz<6kMA3
 R2
+!s105 regfile_sv_unit
 S1
 R3
+w1699245511
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/regfile.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/regfile.sv
+L0 2
 R4
-8D:/CPEN 211/New/Shared-/regfile.sv
-FD:/CPEN 211/New/Shared-/regfile.sv
-!i122 124
-L0 2 71
-R5
 r1
 !s85 0
 31
-R15
-!s107 D:/CPEN 211/New/Shared-/regfile.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/regfile.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/regfile.sv|
 !i113 1
+R6
 R7
-R8
 vshifter
 R0
-Z18 !s110 1700381311
+Z16 !s110 1700429292
 !i10b 1
-!s100 G]00Jdma][d<48R;>Fm6>2
-R1
-I6_?BSfQ6JnNoi@fm^8JHZ3
+!s100 zXJAAU`PT@A?4QcW`Mf3]2
+IMF>__^;VDTnm2;S^UH]F]0
 R2
+!s105 shifter_sv_unit
 S1
 R3
+w1700010879
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter.sv
+L0 1
 R4
-8D:/CPEN 211/New/Shared-/shifter.sv
-FD:/CPEN 211/New/Shared-/shifter.sv
-!i122 125
-L0 1 22
-R5
 r1
 !s85 0
 31
-Z19 !s108 1700381311.000000
-!s107 D:/CPEN 211/New/Shared-/shifter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/shifter.sv|
+R5
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter.sv|
 !i113 1
+R6
 R7
-R8
 vshifter_tb
 R0
-R18
+R16
 !i10b 1
-!s100 F;IJ:WME`kS9IViKjAACz0
-R1
-IXl>?1SIE`QVZI03P<70DB3
+!s100 Nk[8JKa1;Y_gj^_gO6VY`2
+I=QTG?N=8:LY=j_L6]@KQJ2
 R2
+!s105 shifter_tb_sv_unit
 S1
 R3
+w1700369045
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter_tb.sv
+L0 2
 R4
-8D:/CPEN 211/New/Shared-/shifter_tb.sv
-FD:/CPEN 211/New/Shared-/shifter_tb.sv
-!i122 126
-L0 2 58
-R5
 r1
 !s85 0
 31
-R19
-!s107 D:/CPEN 211/New/Shared-/shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/shifter_tb.sv|
+Z17 !s108 1700429292.000000
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/shifter_tb.sv|
 !i113 1
+R6
 R7
-R8
 vsseg
 R0
-R12
+!s110 1700428680
 !i10b 1
-!s100 QmoAoH8aAQk=;93WK19Xd3
-R1
-IYmc4>dcC0JF1L_Wf42^k51
+!s100 K8i9JJ?<NReaY>3H9GUWH3
+IK>AONBiD1[^imbc1On<bQ1
 R2
+R9
 S1
 R3
-R10
+R15
+R11
+R12
+L0 96
+R4
+r1
+!s85 0
+31
+!s108 1700428680.000000
 R13
 R14
-!i122 123
-L0 96 52
-R5
-r1
-!s85 0
-31
-R15
-R16
-R17
 !i113 1
+R6
 R7
-R8
 vStateController
 R0
-R18
+R16
 !i10b 1
-!s100 A00bUJSS]0cm;`XERg=fS0
-R1
-I_QfI[2dafzLdnXSJfSmzk0
+!s100 co6GkMUgKl8mSVJhfCa7b1
+I?m`C=TcU`deSQjzZ__5eM2
 R2
+!s105 state_controller_sv_unit
 S1
 R3
+w1700426483
+8D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/state_controller.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/state_controller.sv
+L0 19
 R4
-8D:/CPEN 211/New/Shared-/state_controller.sv
-FD:/CPEN 211/New/Shared-/state_controller.sv
-!i122 127
-L0 15 156
-R5
 r1
 !s85 0
 31
-R19
-!s107 D:/CPEN 211/New/Shared-/state_controller.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/state_controller.sv|
+R17
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/state_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab6/Shared-/state_controller.sv|
 !i113 1
+R6
 R7
-R8
 n@state@controller
 vvDFF
 R0
-R12
-!i10b 1
-!s100 JH:b_D9?]L6JoQR_ILZLk0
 R1
-Ib=C_aLV7LNZ2DhL6GO1B03
+!i10b 1
+!s100 W^Eg0=nzhAPaf[HIhfDbB2
+I[m>VfME4X:Nf:l9XzXLnI0
 R2
+R9
 S1
 R3
 R10
-R13
-R14
-!i122 123
-L0 79 9
-R5
+R11
+R12
+L0 79
+R4
 r1
 !s85 0
 31
-R15
-R16
-R17
+R5
+R13
+R14
 !i113 1
+R6
 R7
-R8
 nv@d@f@f

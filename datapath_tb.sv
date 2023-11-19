@@ -391,6 +391,16 @@ assign allRegs = {DUT.REGFILE.R7,
   // ADD R7 R7 #1
   // ADD R7 R7 #25 // R7 =  19
 
+  // The following lines describe the binary version of the assembly code above
+  // 110 10 000 00110010
+  // 110 10 001 00010101
+  // 101 00 000 010 00 001
+  // SUB still confused
+  // 101 10 000 100 00 001
+  // LSR still confused
+  // 101 00 010 101 01 011
+  //
+
   // OVERFLOW TEST
   //
   //

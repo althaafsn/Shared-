@@ -17,12 +17,12 @@
 `define SEL_M 3'b001
 
 module StateController(
-    input [3:0] opcode,
-    input [2:0] op,
+    input [2:0] opcode,
+    input [1:0] op,
     input clk, rst, s,
     output reg loadc, loads, loada, loadb, w, write,
     output reg [2:0] nsel,
-    output reg [1:0] vsel
+    output reg [1:0] vsel, sel
     );
 
     /*
@@ -46,8 +46,6 @@ module StateController(
    
     reg [3:0] currentState;
     reg [3:0] allLoad;
-    reg [1:0] sel;
-    
     
     assign {loads, loadc, loadb, loada} = allLoad;
     assign {selB, selA} = sel;
@@ -60,6 +58,8 @@ module StateController(
         end else         
         
         case(currentState)
+            
+            // Only proceed if s is 1, else return to wait
             `S_WAIT: 
             begin
                 if (s) begin
@@ -67,6 +67,7 @@ module StateController(
                 end else currentState = `S_WAIT;
             end
 
+            // Now branching, 
             `S_DECODE: 
             begin
                 if (opcode == 3'b110
@@ -85,14 +86,28 @@ module StateController(
 
             `S_GetB:
             begin
-                if (opcode == 3'b101 
-                    || (opcode == 3'b110 && op == 2'b00)) begin
-                    
-                    currentState = `S_ALU;
-
-                    end else if (opcode == 3'b101 && op == 2'b01) begin
+                if (opcode == 3'b101) begin
+                    if (op == 2'b01) begin
                         currentState = `S_COMP;
+                    end else begin
+                        currentState = `S_ALU;
+                    end
+
+                end else if (opcode == 3'b110) begin
+                    if (op == 2'b00) begin
+                        currentState = `S_ALU;
                     end else currentState = `S_WAIT;
+                end else currentState = `S_WAIT;
+                
+                
+                // if (opcode == 3'b101 
+                //     || (opcode == 3'b110 && op == 2'b00)) begin
+                    
+                //         currentState = `S_ALU;
+
+                //     end else if (opcode == 3'b101 && op == 2'b01) begin
+                //         currentState = `S_COMP;
+                //     end else currentState = `S_WAIT;
             end 
   
             `S_ALU:
@@ -126,6 +141,7 @@ module StateController(
         sel = 2'b00;
         vsel = `VSEL_C;
         write = 1'b0;
+		nsel = 3'b000;
         
         case (currentState)
             `S_WAIT: begin
@@ -135,6 +151,12 @@ module StateController(
             // If is in the ALU state, loadC
             `S_ALU: begin
                 allLoad = 4'b0100;
+
+                // IF opcode == 3'b110 (MOV) or op = 2'b11 (MVN)
+                if ((opcode == 3'b110) || (op == 2'b11)) begin
+                    sel = 2'b01;
+                end else sel = 2'b00;
+
             end  
 
             `S_GetA: begin

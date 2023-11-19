@@ -86,6 +86,33 @@ module vDFF(clk,D,Q);
     Q <= D;
 endmodule
 
+module sseg(in,segs);
+  input [3:0] in;
+  output reg [6:0] segs;
+
+  always_comb begin
+    segs = `ALL_OFF;  
+    case(in)
+      4'h0: segs = `ZERO;
+      4'h1: segs = `ONE;
+      4'h2: segs = `TWO;
+      4'h3: segs = `THREE;
+      4'h4: segs = `FOUR;
+      4'h5: segs = `FIVE;
+      4'h6: segs = `SIX;
+      4'h7: segs = `SEVEN;
+      4'h8: segs = `EIGHT;
+      4'h9: segs = `NINE;
+      4'hA: segs = `LETTER_A;
+      4'hB: segs = `LETTER_B;
+      4'hC: segs = `LETTER_C;
+      4'hD: segs = `LETTER_D;
+      4'hE: segs = `LETTER_E;
+      4'hF: segs = `LETTER_F;
+    endcase
+  end
+endmodule
+
 // The sseg module below can be used to display the value of datpath_out on
 // the hex LEDS the input is a 4-bit value representing numbers between 0 and
 // 15 the output is a 7-bit value that will print a hexadecimal digit.  You
@@ -93,9 +120,9 @@ endmodule
 // code will not work with the DE1-SoC because the order of segments used in
 // the book is not the same as on the DE1-SoC (see comments below).
 
-module sseg(in,segs);
-  input [3:0] in;
-  output [6:0] segs;
+// module sseg(in,segs);
+//   input [3:0] in;
+//   output [6:0] segs;
 
   // NOTE: The code for sseg below is not complete: You can use your code from
   // Lab4 to fill this in or code from someone else's Lab4.  
@@ -142,6 +169,6 @@ module sseg(in,segs);
   //            14 | E
   //            15 | F
 
-  assign segs = 7'b0001110;  // this will output "F" 
+//   assign segs = 7'b0001110;  // this will output "F" 
 
-endmodule
+// endmodule

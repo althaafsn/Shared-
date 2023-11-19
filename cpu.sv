@@ -18,9 +18,6 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
     reg [15:0] next_instruction;
     vDFF #(16) InstructionReg (clk & load, in, next_instruction);
 
-    // DECODER, determines parmaters
-    InstructionDecoder Dec (next_instruction, opcode, op, Rn, Rd, sh, Rm, imm8);
-    
     // From decoder
     reg [2:0] opcode;  
     reg [1:0] op;
@@ -28,14 +25,21 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
     reg [2:0] Rd;       // destination reg
     reg [1:0] sh;       // shift value
     reg [2:0] Rm;       // 2nd operand
-    reg [7:0] imm8;     // ALT: 8 bit immediate
+    wire [7:0] imm8;     // ALT: 8 bit immediate
+	   
+    // DECODER, determines parmaters
+    InstructionDecoder Dec (next_instruction, opcode, op, Rn, Rd, sh, Rm, imm8);
+
+	 // ====== SIGN EXTENSION on IMM8
+
+    wire [15:0] sximm8 = {{8{imm8[7]}}, imm8};
 
     // passOpCode and op to FSM
 
     // signals from FSM
     reg loads, loadb, loadc, loada, write;
     reg [2:0] nsel;
-    reg [1:0] vsel;
+    reg [1:0] vsel, sel;
     
     StateController FSM(
                         // external signals
@@ -54,7 +58,8 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
                         .loada(loada),
                         .write(write),
                         .nsel(nsel), // selects reg
-                        .vsel(vsel) // select input
+                        .vsel(vsel), // select input
+                        .sel(sel),
                         .w(w)       // to signal the state
                                                             );
 
@@ -72,21 +77,21 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
             `SEL_D: currentReg = Rd;
             `SEL_N: currentReg = Rn;
             `SEL_M: currentReg = Rm;
+				default: currentReg = 3'bxxx;
         endcase 
     end
-
-    // ====== SIGN EXTENSION on IMM8
-
-    reg [15:0] sximm8 = {{8{sximm8[7]}}, imm8};
 
     // For now set imm5 to 0, mdata to 0, and pc to 0
     reg [4:0] imm5 = 5'b00000;
     reg [15:0] pc = 0;
     reg [15:0] mdata = 0;
+    wire [2:0] status_out;
+    wire asel, bsel;
+    assign {bsel, asel} = sel;
     
     // Now connect datapath to signals
 
-    datapath dp (
+    datapath DP (
                     // clock
                     clk,
 
@@ -107,7 +112,7 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
                                                             );
 
     // MAP STATUS_OUT to Z, V, and W
-    assign {Z,V,W} = status_out;
+    assign {Z,V,N} = status_out;
 
     
 

@@ -1,6 +1,6 @@
 `define ADD 2'b00
 `define SUB 2'b01
-`define AND 2'b01
+`define AND 2'b10
 `define MVN 2'b11
 
 module ALU_test();
