@@ -11,10 +11,12 @@ module datapath (
     readnum, vsel, loada, loadb,
     // ALU
     shift, asel, bsel, ALUop, loadc, loads,
+    // immideate
+    imm5,
     // set register
     writenum, write, mdata, sximm8, pc, c,
     // output
-    Z_out, datapath_out );
+    status_out, datapath_out );
 
     input clk, loada, loadb, loadc, loads, write, asel, bsel;
     input [1:0] ALUop, shift, vsel; 
@@ -24,7 +26,7 @@ module datapath (
     output reg [2:0] status_out;
     output reg [15:0] datapath_out;
 
-    wire sximm5 = {11{imm5[4]}, imm5}
+    wire sximm5 = {{11{imm5[4]}}, imm5};
     reg [15:0] data_in_reg, data_out_reg, A_FF, B_FF, s_out, A_in_ALU, B_in_ALU, out_ALU;
     reg [2:0] status; 
 
@@ -43,7 +45,7 @@ module datapath (
     // VSEl MUX
 
     always_comb begin
-        case(vsel):
+        case(vsel)
             `VSEL_C: data_in_reg = c;
             `VSEL_PC: data_in_reg = pc;
             `VSEL_IMM: data_in_reg = sximm8;

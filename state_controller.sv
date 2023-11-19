@@ -13,42 +13,42 @@
 `define VSEL_MDATA 2'b11
 
 module StateController(
-    input [3:0] opcode;
-    input [2:0] op;
-    input clk, rst, s;
-    output loadc, loads, loada, loadb, w, write;
-    output [2:0] nsel;
-    output [1:0] vsel;
+    input [3:0] opcode,
+    input [2:0] op,
+    input clk, rst, s,
+    output reg loadc, loads, loada, loadb, w, write,
+    output reg [2:0] nsel,
+    output reg [1:0] vsel
     );
 
-    reg [3:0] currentState;
-    reg [3:0] allLoad;
-    reg [1:0] sel;
-    reg [1:0] vsel;
-    reg write;
-    
-    assign {selB, selA} = sel;
-    
     /*
-        sel 
+        sel - select which value to load.
         selB   selA
           1     0   
     */
-    
-    assign {loads, loadc, loadb, loada} = allLoad;
 
     /*
-        loads 
+        loads - loader control
           3     2     1     0
         loads loadc loadb loada
     */
 
-    reg [2:0] nsel;
     /*
-        nsel (one hot)
+        nsel (one hot) - select register
          2   1   0
          Rd  Rm  Rn
     */
+   
+   
+    reg [3:0] currentState;
+    reg [3:0] allLoad;
+    reg [1:0] sel;
+    
+    
+    assign {loads, loadc, loadb, loada} = allLoad;
+    assign {selB, selA} = sel;
+    
+
 
     // NOTE: loads run on the next rising edge of clock
     always_ff @(posedge clk) begin
@@ -56,7 +56,7 @@ module StateController(
             currentState = `S_WAIT;
         end else         
         
-        switch(currentState) begin
+        case(currentState)
             `S_WAIT: 
             begin
                 if (s) begin
@@ -70,7 +70,7 @@ module StateController(
                 && op == 2'b10) begin
                     currentState = `S_WriteImm;
                 end else if (opcode == 3'b101 || 
-                            (opcode == 3'b110 && op = 2'b00)) begin
+                            (opcode == 3'b110 && op == 2'b00)) begin
                     currentState = `S_GetA;
                 end else currentState = `S_WAIT; 
             end
@@ -111,8 +111,7 @@ module StateController(
             begin
                 currentState = `S_WAIT;
             end
-
-        end
+        endcase
     end
 
     // Output is a Mealy Machine.
@@ -156,7 +155,7 @@ module StateController(
             end 
 
             `S_COMP: begin
-                allLoad = 4'1000;
+                allLoad = 4'b1000;
             end
 
         endcase
