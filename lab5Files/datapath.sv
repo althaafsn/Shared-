@@ -16,8 +16,8 @@ module datapath (
     // output
     Z_out, datapath_out );
 
-    input clk, vsel, loada, loadb, loadc, loads, write, asel, bsel;
-    input [1:0] ALUop, shift; 
+    input clk, loada, loadb, loadc, loads, write, asel, bsel;
+    input [1:0] ALUop, shift, vsel; 
     input [2:0] readnum, writenum;
     input [15:0] mdata, sximm8, pc, c;
     input [4:0] imm5;
@@ -41,32 +41,32 @@ module datapath (
 
     always_comb VSEL_MUX begin
         case(vsel):
-            `VSEL_C: data_in_reg = 
-            `VSEL_PC: data_in_reg = 
-            `VSEL_IMM: data_in_reg = 
-            `VSEL_MDATA: data_in_reg = 
+            `VSEL_C: data_in_reg = c;
+            `VSEL_PC: data_in_reg = pc;
+            `VSEL_IMM: data_in_reg = sximm8;
+            `VSEL_MDATA: data_in_reg = mdata;
         endcase
     end
 
 
-    always_comb begin
-      if (vsel == 1'b1) begin
-        data_in_reg <= datapath_in;
-      end else begin
-        data_in_reg <= datapath_out;
-      end
+    // always_comb begin
+    //   if (vsel == 2'b01) begin
+    //     data_in_reg <= datapath_in;
+    //   end else begin
+    //     data_in_reg <= datapath_out;
+    //   end
 
-      if (asel == 1'b1) begin
-        A_in_ALU <= 16'b0;
-      end else begin
-        A_in_ALU <= A_FF;
-      end
+    //   if (asel == 1'b1) begin
+    //     A_in_ALU <= 16'b0;
+    //   end else begin
+    //     A_in_ALU <= A_FF;
+    //   end
 
-      if (bsel == 1'b1) begin
-        B_in_ALU <= sximm5;
-      end else begin
-        B_in_ALU <= s_out;
-      end
-    end
+    //   if (bsel == 1'b1) begin
+    //     B_in_ALU <= sximm5;
+    //   end else begin
+    //     B_in_ALU <= s_out;
+    //   end
+    // end
 
 endmodule
