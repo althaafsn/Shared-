@@ -62,7 +62,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	datapath_tb
 
-} {} {}} {D:/CPEN 211/New/Shared-/cpu_tb.sv} {1 {vlog -work work -sv -stats=none {D:\CPEN 211\New\Shared-\cpu_tb.sv}
+} {} {}} {D:/CPEN 211/New/Shared-/cpu_tb.sv} {1 {vlog -work work -sv -stats=none {D:/CPEN 211/New/Shared-/cpu_tb.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module cpuTest
 
