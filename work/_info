@@ -11,29 +11,29 @@ cModel Technology
 dD:/UBC/Courses/2023W1/CPEN_211/Lab 5
 vALU
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1700437614
+Z1 !s110 1700514450
 !i10b 1
 !s100 2ceZDo2?;>Qi`QV`V:E992
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IgV91?JO5L=9?QWBP]Hiln2
+IFda?CLo]jDG0W:S<6zL[Q3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z4 dD:/CPEN 211/New/Shared-
-Z5 w1700372610
-8D:/CPEN 211/New/Shared-/alu.sv
-FD:/CPEN 211/New/Shared-/alu.sv
-!i122 29
+Z4 dD:/CPEN 211/lab6/lab-6-l1a-althaafsn
+w1700452435
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu.sv
+!i122 284
 L0 1 32
-Z6 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1700437614.000000
-!s107 D:/CPEN 211/New/Shared-/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/alu.sv|
+!s108 1700514449.000000
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu.sv|
 !i113 1
-Z8 o-work work -sv
-Z9 tCvgOpt 0
+Z6 o-work work -sv
+Z7 tCvgOpt 0
 n@a@l@u
 vALU_test
 R0
@@ -41,377 +41,379 @@ R1
 !i10b 1
 !s100 Wn_8ClC7lC8z=FeXHj6b40
 R2
-I6d5QCYiB<ZK?m2Y8WHed61
+I]9bd4fIJRMn]9e_lEJkCe3
 R3
 S1
 R4
-Z10 w1700429824
-8D:/CPEN 211/New/Shared-/alu_tb.sv
-FD:/CPEN 211/New/Shared-/alu_tb.sv
-!i122 30
+w1700429824
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu_tb.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu_tb.sv
+!i122 285
 L0 6 198
-R6
+R5
 r1
 !s85 0
 31
-R7
-!s107 D:/CPEN 211/New/Shared-/alu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/alu_tb.sv|
+Z8 !s108 1700514450.000000
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/alu_tb.sv|
 !i113 1
-R8
-R9
+R6
+R7
 n@a@l@u_test
 vcpu
 R0
 R1
 !i10b 1
-!s100 8>GzRN?_2VAWRS3z=og1A2
+!s100 kF69a62Jj`=Vf@@dLlT3?1
 R2
-Ik7Nii:Id^3WJG776N[dge2
+INGLh7:5`nX>RMo:3aB?eB0
 R3
 S1
 R4
-R10
-8D:/CPEN 211/New/Shared-/cpu.sv
-FD:/CPEN 211/New/Shared-/cpu.sv
-!i122 31
-L0 11 129
-R6
+w1700514447
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu.sv
+!i122 286
+L0 11 137
+R5
 r1
 !s85 0
 31
-R7
-!s107 D:/CPEN 211/New/Shared-/cpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/cpu.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu.sv|
+!i113 1
+R6
+R7
 vcpuTest
 R0
-Z11 !s110 1700437615
+R1
 !i10b 1
-!s100 G?dXTZaNH62YGZAYGKA1g1
+!s100 :QJElgd:Uc?kn_1Z]hX6Z1
 R2
-I7XXjB6Xh?a74Rij276oJ;2
+I7EaT;7ePeLcJi_B<M30o01
 R3
 S1
 R4
-R10
-8D:/CPEN 211/New/Shared-/cpu_tb.sv
-FD:/CPEN 211/New/Shared-/cpu_tb.sv
-!i122 32
-L0 25 513
-R6
+w1700452928
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb.sv
+!i122 287
+L0 25 621
+R5
 r1
 !s85 0
 31
-R7
-!s107 D:/CPEN 211/New/Shared-/cpu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/cpu_tb.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-cover|sbce3|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb.sv|
+!i113 1
+Z9 !s102 -cover sbce3
+Z10 o-work work -sv -cover sbce3
+R7
 ncpu@test
 vdatapath
 R0
-R11
+R1
 !i10b 1
-!s100 I3V7IX_]6=HHGLVPTPh??1
+!s100 >=N2=BaMJN?dMMRThj<kY1
 R2
-I[F?DCJzJlg<QCWe]fnX0F3
+IO3FeW2Jm2JYNY4fh^99f?0
 R3
 S1
 R4
-w1700381263
-8D:/CPEN 211/New/Shared-/datapath.sv
-FD:/CPEN 211/New/Shared-/datapath.sv
-!i122 33
-L0 12 65
-R6
+w1700455048
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath.sv
+!i122 288
+L0 12 85
+R5
 r1
 !s85 0
 31
-Z12 !s108 1700437615.000000
-!s107 D:/CPEN 211/New/Shared-/datapath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/datapath.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath.sv|
+!i113 1
+R6
+R7
 vdatapath_tb
 R0
-R11
+R1
 !i10b 1
-!s100 j91k4=SVg;3RNkAZo5Qzl2
+!s100 z<aWEKBa8UG18lDzBeB5@1
 R2
-I725^PbbX?:OdM0ce;;_8D1
+IbN[i?Mfi[h3K[PEZEg1EX2
 R3
 S1
 R4
-R10
-8D:/CPEN 211/New/Shared-/datapath_tb.sv
-FD:/CPEN 211/New/Shared-/datapath_tb.sv
-!i122 34
+w1700439143
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath_tb.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath_tb.sv
+!i122 289
 L0 38 440
-R6
+R5
 r1
 !s85 0
 31
-R12
-!s107 D:/CPEN 211/New/Shared-/datapath_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/datapath_tb.sv|
-!i113 1
 R8
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-cover|sbce3|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/datapath_tb.sv|
+!i113 1
 R9
+R10
+R7
 vinput_iface
 R0
-R11
+R1
 !i10b 1
 !s100 k]mK^aM:0WfjNM:1dRIG`0
 R2
-I<e`^ZBD=28]oSE@fSMZ@J0
+In=j3TiM50;]]?Q95H@1ac1
 R3
 S1
 R4
-Z13 w1700434772
-Z14 8D:/CPEN 211/New/Shared-/lab6_top.sv
-Z15 FD:/CPEN 211/New/Shared-/lab6_top.sv
-!i122 37
+Z11 w1700439308
+Z12 8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_top.sv
+Z13 FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_top.sv
+!i122 292
 L0 88 10
-R6
+R5
 r1
 !s85 0
 31
-R12
-Z16 !s107 D:/CPEN 211/New/Shared-/lab6_top.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/lab6_top.sv|
-!i113 1
 R8
-R9
+Z14 !s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_top.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_top.sv|
+!i113 1
+R6
+R7
 vInstructionDecoder
 R0
-R11
+R1
 !i10b 1
 !s100 FZhW^KhdJG=IzQSo_gZ4g0
 R2
-Im41VdQEL=G?BjLn:cP[mX2
+I_6[hVo<8@ZS]H9^LAH]P^2
 R3
 S1
 R4
 w1700414997
-8D:/CPEN 211/New/Shared-/instructionDecoder.sv
-FD:/CPEN 211/New/Shared-/instructionDecoder.sv
-!i122 35
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/instructionDecoder.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/instructionDecoder.sv
+!i122 290
 L0 2 20
-R6
+R5
 r1
 !s85 0
 31
-R12
-!s107 D:/CPEN 211/New/Shared-/instructionDecoder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/instructionDecoder.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/instructionDecoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/instructionDecoder.sv|
+!i113 1
+R6
+R7
 n@instruction@decoder
 vlab6_check
 R0
-R11
+R1
 !i10b 1
 !s100 i6=A@iaYRoEiMekdkBgFG2
 R2
-I2GM]ZTYZ_hKQa^cNjT2eG0
+IJ40UQIEIGSg66L5B`QCIC3
 R3
 S1
 R4
 w1700367971
-8D:/CPEN 211/New/Shared-/lab6_autograder_check.sv
-FD:/CPEN 211/New/Shared-/lab6_autograder_check.sv
-!i122 36
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_autograder_check.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_autograder_check.sv
+!i122 291
 L0 11 75
-R6
+R5
 r1
 !s85 0
 31
-R12
-!s107 D:/CPEN 211/New/Shared-/lab6_autograder_check.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/lab6_autograder_check.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_autograder_check.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/lab6_autograder_check.sv|
+!i113 1
+R6
+R7
 vlab6_top
 R0
-!s110 1700429909
+R1
 !i10b 1
 !s100 a`Tj:f__H^8Xfc8bI9V_O3
 R2
-Ig]4]=52JEWPB==DILk4Sk1
+I7BlYl^eO:<F<=CG8E]hA90
 R3
 S1
 R4
-w1700429901
-R14
-R15
-!i122 21
+R11
+R12
+R13
+!i122 292
 L0 52 35
-R6
+R5
 r1
 !s85 0
 31
-!s108 1700429909.000000
-R16
-R17
-!i113 1
 R8
-R9
+R14
+R15
+!i113 1
+R6
+R7
 vregfile
 R0
-Z18 !s110 1700437616
+R1
 !i10b 1
 !s100 E^UQ]h29`Q88=K?aiKR<Z1
 R2
-I3fRQ[EFZaie3Jl8b9FTJn1
+I`;:n8Q6XQKi7CK5L;zgNQ0
 R3
 S1
 R4
-R5
-8D:/CPEN 211/New/Shared-/regfile.sv
-FD:/CPEN 211/New/Shared-/regfile.sv
-!i122 38
+Z16 w1700372610
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/regfile.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/regfile.sv
+!i122 293
 L0 2 71
-R6
+R5
 r1
 !s85 0
 31
-R12
-!s107 D:/CPEN 211/New/Shared-/regfile.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/regfile.sv|
-!i113 1
 R8
-R9
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/regfile.sv|
+!i113 1
+R6
+R7
 vshifter
 R0
-R18
+Z17 !s110 1700514451
 !i10b 1
 !s100 G]00Jdma][d<48R;>Fm6>2
 R2
-I6_?BSfQ6JnNoi@fm^8JHZ3
+I9=k]3dY=3`X7AlT?I^9j10
 R3
 S1
 R4
-R5
-8D:/CPEN 211/New/Shared-/shifter.sv
-FD:/CPEN 211/New/Shared-/shifter.sv
-!i122 39
+R16
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter.sv
+!i122 294
 L0 1 22
-R6
+R5
 r1
 !s85 0
 31
-Z19 !s108 1700437616.000000
-!s107 D:/CPEN 211/New/Shared-/shifter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/shifter.sv|
+Z18 !s108 1700514451.000000
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter.sv|
 !i113 1
-R8
-R9
+R6
+R7
 vshifter_tb
 R0
-R18
+R17
 !i10b 1
 !s100 F;IJ:WME`kS9IViKjAACz0
 R2
-IXl>?1SIE`QVZI03P<70DB3
+I`fHGN]W>i6<Li=icXm6T61
 R3
 S1
 R4
-R5
-8D:/CPEN 211/New/Shared-/shifter_tb.sv
-FD:/CPEN 211/New/Shared-/shifter_tb.sv
-!i122 40
+R16
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter_tb.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter_tb.sv
+!i122 295
 L0 2 58
-R6
+R5
 r1
 !s85 0
 31
-R19
-!s107 D:/CPEN 211/New/Shared-/shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/shifter_tb.sv|
+R18
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/shifter_tb.sv|
 !i113 1
-R8
-R9
+R6
+R7
 vsseg
 R0
-R11
+R1
 !i10b 1
 !s100 B^<PGI2M1C`CXfbZdeDzI2
 R2
-IV=LQ_F`2;TLBX?9X5dHZX3
+Ii11e:L2AYHONGgegnKd]X0
 R3
 S1
 R4
+R11
+R12
 R13
+!i122 292
+L0 109 26
+R5
+r1
+!s85 0
+31
+R8
 R14
 R15
-!i122 37
-L0 109 26
-R6
-r1
-!s85 0
-31
-R12
-R16
-R17
 !i113 1
-R8
-R9
+R6
+R7
 vStateController
 R0
-R18
+R17
 !i10b 1
-!s100 d_V>g9SLm`iWz2h4;DQlV1
+!s100 _7MfdgT7Ajm>`8L@ozQI[2
 R2
-IdTf7OVR]_5z2JLWM6@Yjk2
+IGYNjh59OnDK1bXH<i=R5J0
 R3
 S1
 R4
-R10
-8D:/CPEN 211/New/Shared-/state_controller.sv
-FD:/CPEN 211/New/Shared-/state_controller.sv
-!i122 41
-L0 19 179
-R6
+w1700453703
+8D:/CPEN 211/lab6/lab-6-l1a-althaafsn/state_controller.sv
+FD:/CPEN 211/lab6/lab-6-l1a-althaafsn/state_controller.sv
+!i122 296
+L0 19 174
+R5
 r1
 !s85 0
 31
-R19
-!s107 D:/CPEN 211/New/Shared-/state_controller.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/New/Shared-/state_controller.sv|
+R18
+!s107 D:/CPEN 211/lab6/lab-6-l1a-althaafsn/state_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/CPEN 211/lab6/lab-6-l1a-althaafsn/state_controller.sv|
 !i113 1
-R8
-R9
+R6
+R7
 n@state@controller
 vvDFF
 R0
-R11
+R1
 !i10b 1
 !s100 X4Nj2<VVAU@;JJGlOIk_:1
 R2
-IKWTMAL?dZcVMB<AzB[Zkj1
+IiPJ?Cng<fdB7icea8FjQD0
 R3
 S1
 R4
+R11
+R12
 R13
-R14
-R15
-!i122 37
+!i122 292
 L0 99 9
-R6
+R5
 r1
 !s85 0
 31
-R12
-R16
-R17
-!i113 1
 R8
-R9
+R14
+R15
+!i113 1
+R6
+R7
 nv@d@f@f

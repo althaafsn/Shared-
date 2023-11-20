@@ -187,11 +187,6 @@ module StateController(
 
         endcase
 
-    end
-
-
-
-
-    
+    end    
 
 endmodule

@@ -1,0 +1,14 @@
+CONTRIBS
+Althaaf: 
+- Worked on together for CPU testbenches with Kenrick
+-  Together worked on Datapath testbenches with Kenrick
+-  Collaboratively made the CPU with Kenrick
+- Translated the assembly instructions to be tested for the testbenches
+- Collaboratively designed the state machine to be used in the CPU
+
+Kenrick:
+-  Worked on together for CPU testbenches with Althaaf
+-  Together worked on Datapath testbenches with Althaaf
+-  Collaboratively made the CPU with Althaaf
+-  Made some changes in the ALU and Datapath
+- Collaboratively designed the state machine to be used in the CPU

@@ -1,4 +1,18 @@
-{D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo} {1 {vlog -work work -stats=none {D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo}
+{D:/CPEN 211/lab6/lab-6-l1a-althaafsn/simulation/modelsim/lab6_top.vo} {1 {vlog -work work -stats=none {D:/CPEN 211/lab6/lab-6-l1a-althaafsn/simulation/modelsim/lab6_top.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lab6_top
+
+Top level modules:
+	lab6_top
+
+} {} {}} {D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb_gate.sv} {1 {vlog -work work -sv -stats=none {D:/CPEN 211/lab6/lab-6-l1a-althaafsn/cpu_tb_gate.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cpuTest
+
+Top level modules:
+	cpuTest
+
+} {} {}} {D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo} {1 {vlog -work work -stats=none {D:/CPEN 211/New/Shared-/simulation/modelsim/cpu.vo}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module cpu
 

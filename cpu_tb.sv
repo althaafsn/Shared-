@@ -527,8 +527,116 @@ module cpuTest();
         $display ("\nMVN r6 r1");
         MVN( `r6, `r1, `NO_SHIFT, -9);
 
+        // Check overflow
+        // r0 = 127
+        $display("\nMOV r0 #127");
+        MOV_IMM(`r0, 127);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 127 + 127 = 254
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 254);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 254 + 254 = 508
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 508);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 508 + 508 = 1016
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 1016);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 1016 + 1016 = 2032
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 2032);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 2032 + 2032 = 4064
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 4064);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 4064 + 4064 = 8128
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 8128);
+        
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 8128 + 8128 = 16256
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 16256);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 16256 + 16256 = 32512
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, 32512);
+
+        $display("\nMOV r1 r0");
+        // r1 = r0 = 32512
+        MOV(`r1, `r0, `NO_SHIFT, 32512);
+
+        $display("\nADD r0 r0 r0");
+        // r0 = r0 + r0 = 32512 + 32512 = 65024
+        ALU_OP(`ADD, `r0, `r0, `r0, `NO_SHIFT, -512);
+
+        // CMP r0, r1, ZVN = 011
+        $display ("\nCMP r0 r1");
+        CMP( `r1, `r0, `NO_SHIFT, 3'b011);
+
+        // Check Overflow in Reverse
+
+        // CMP r0, r1, ZVN = 011
+        $display ("\nCMP r0 r1");
+        CMP( `r0, `r1, `NO_SHIFT, 3'b010);
+
+        // RESET TEST
+        
+        // MOV
+        sim_in = 16'b11010000_01111111;
+        
+        // load instruction and start state machine
+        sim_load = 1'b1;
+        #10;
+        sim_load = 1'b0;
+        sim_s = 1'b1;
+        #10;
+        sim_s = 1'b0;
+
+        // reset
+        reset = 1'b1;
+        #10;
+        reset = 1'b0;
+        assert (stateWait == 1) $display ("Back to state wait successful!");
+        else begin 
+            $display ("state is not wait");
+            err = 1'b1;
+        end
+
+        // ALU
+        sim_in = {`OPCODE_ALUOP, `ADD, 3'b011, 3'b011, `NO_SHIFT, 3'b011};
+        
+        // load instruction and start state machine
+        sim_load = 1'b1;
+        #10;
+        sim_load = 1'b0;
+        sim_s = 1'b1;
+        #10;
+        sim_s = 1'b0;
+
+        // Decode
+        #10;
+        // Get A
+        #10;
+        // Get B
+        #10;
+
+        // reset
+        reset = 1'b1;
+        #10;
+        reset = 1'b0;
+
+        assert (stateWait == 1) $display ("Back to state wait successful!");
+        else begin 
+            $display ("state is not wait");
+            err = 1'b1;
+        end 
+
+
     
-        assert (err == 0) $display ("Passed all tests");
+      assert (err == 0) $display ("Passed all tests");
         else $display ("FAILED");
 
         $stop;

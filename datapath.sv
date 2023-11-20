@@ -39,11 +39,31 @@ module datapath (
     regfile REGFILE(data_in_reg, writenum, write, readnum, clk, data_out_reg);
     ALU ALUModule(A_in_ALU, B_in_ALU, ALUop, out_ALU, status);
     
-    vDFF #(16) A_loader(clk & loada, data_out_reg, A_FF);
-    vDFF #(16) B_loader(clk & loadb, data_out_reg, B_FF);
-    vDFF #(16) C_loader(clk & loadc, out_ALU, c);
-    vDFF #(3) status_loader(clk & loads, status, status_out);
-    
+    // vDFF #(16) A_loader(clk & loada, data_out_reg, A_FF);
+    // vDFF #(16) B_loader(clk & loadb, data_out_reg, B_FF);
+    // vDFF #(16) C_loader(clk & loadc, out_ALU, c);
+    // vDFF #(3) status_loader(clk & loads, status, status_out);
+
+    always_ff @(posedge clk) begin
+        if (loada) begin 
+            A_FF = data_out_reg;
+        end else A_FF = A_FF;
+
+        if (loadb) begin 
+            B_FF = data_out_reg;
+        end else B_FF = B_FF;
+
+        if (loadc) begin 
+            c = out_ALU;
+        end else c = c;
+
+        if (loads) begin 
+            status_out = status;
+        end else status_out = status_out;
+    end 
+
+
+
     //Datapath in
 
     // VSEl MUX

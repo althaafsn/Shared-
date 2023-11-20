@@ -16,7 +16,15 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
 
     // Construct instruction register, set it to load a new instruction when load is high
     reg [15:0] next_instruction;
-    vDFF #(16) InstructionReg (clk & load, in, next_instruction);
+    // vDFF #(16) InstructionReg (clk & load, in, next_instruction);
+
+    always_ff @(posedge clk) begin
+        if (load) begin
+            next_instruction = in;
+        end else begin
+            next_instruction = next_instruction;
+        end
+    end
 
     // From decoder
     reg [2:0] opcode;  

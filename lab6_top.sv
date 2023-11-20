@@ -76,7 +76,7 @@ module lab6_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,CLOCK_50);
   assign HEX5[3] = ~V;
 
   // fill in sseg to display 4-bits in hexidecimal 0,1,2...9,A,B,C,D,E,F
-  sseg H0(outw[3:0],   HEX0);
+  sseg H0(out[3:0],   HEX0);
   sseg H1(out[7:4],   HEX1);
   sseg H2(out[11:8],  HEX2);
   sseg H3(out[15:12], HEX3);

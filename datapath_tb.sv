@@ -410,7 +410,7 @@ assign allRegs = {DUT.REGFILE.R7,
   MOV (`r1, 21, 21,`VSEL_IMM);
   AritOP(`ADD, `r2, `r0, `r1, `NO_SHIFT, 71, 3'b000);
   AritOP(`SUB, `r3, `r0, `r1, `NO_SHIFT, 29, 3'b000);
-  AritOP(`AND, `r4, `r0, `r1, `NO_SHIFT, 16'b0000_00000_0001_0000, 3'bxxx);
+  AritOP(`AND, `r4, `r0, `r1, `NO_SHIFT, 16'b0000_00000_0001_0000, 3'b000);
   LS(`R_1, `r4, `r2, 35, 3'b000);
   AritOP(`ADD, `r5, `r2, `r3, `L_1, 129, 3'b000);
   AritOP(`SUB, `r6, `r2, `r4, `R_1, 54, 3'b000);
