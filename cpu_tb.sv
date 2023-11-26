@@ -20,7 +20,8 @@
 `define NO_SHIFT 2'b00
 `define L_1 2'b01
 `define R_1 2'b10
-`define R_X 2'b11
+`define ASR 2'b11
+
 
 module cpuTest();
 
@@ -634,9 +635,89 @@ module cpuTest();
             err = 1'b1;
         end 
 
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    
-      assert (err == 0) $display ("Passed all tests");
+                                             /* SECOND BATCH OF TESTS */
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        
+        // MOV_IMM zero
+        $display("\nMOV r0 #0");
+        MOV_IMM(`r0, 0);
+        
+        // MOV_IMM negative value
+        $display("\nMOV r1 #-20");
+        MOV_IMM(`r1, -20);
+
+        // Test addition 0 + -20 * 2 = -40
+        $display("\nADD r2 r0 r1 LSL 1; r2 = -40");
+        ALU_OP(`ADD, `r2, `r0, `r1, `L_1, -40);
+
+        // Test ASL on MOV, on self, r2 = -40, r2/2 = -20
+        $display("\nMOV r2 r2 ASR; r2 = -20");
+        MOV(`r2, `r2, `ASR, -20);
+
+        // Test addition 0 + -20 * 2 = -40
+        $display("\nADD r2 r0 r1 LSL 1; r2 = -40");
+        ALU_OP(`ADD, `r2, `r0, `r1, `L_1, -40);
+
+        // ADD need negative add
+        // CMP done 
+        // AND shift right & shift left
+        // MVN shift right & shift left
+
+
+        // MOV r0 #0
+        // MOV r0 #-8
+        // MOV r0 r0 ASL;
+        // MOV LSR
+        // MVN r1 LSL
+        // MVN r1 LSR
+        
+
+        // AND LSL 
+        // MOV r6 #2
+        $display("\nMOV r6 #2");
+        MOV_IMM(`r6, 2);
+
+        // MOV r7 #4
+        $display("\nMOV r7 #4");
+        MOV_IMM(`r7, 4);
+
+        // AND r6 r7 r6 LSL #1
+        $display("\nAND r6 r7 r6 LSL #1");
+        ALU_OP(`AND, `r6, `r7, `r6, `L_1, 16'b0000_0000_0000_0100);
+
+        // AND LSR
+        // MOV r6 #2
+        $display("\nMOV r6 #2");
+        MOV_IMM(`r6, 2);
+
+        // MOV r7 #4
+        $display("\nMOV r7 #4");
+        MOV_IMM(`r7, 4);
+
+        // AND r6 r6 r7 LSR #1
+        $display("\nAND r6 r6 r7 LSR #1R");
+        ALU_OP(`AND, `r6, `r6, `r7, `R_1, 16'b0000_0000_0000_0010);
+
+        // MOV r0 1
+        $display("\nMOV r0 3");
+        MOV_IMM(`r0, 3);
+        
+        $display("\nMVN r1 LSR");
+        MVN(`r1, `r0, `R_1, 16'b1111_1111_1111_1110);
+
+        $display("\nMOV r2 r1 LSR");
+        MOV(`r2, `r1, `R_1, 16'b0111_1111_1111_1111);
+
+        $display("\nMVN r2 r2 LSL");
+        MVN(`r2, `r2, `L_1, 1);
+
+        assert (err == 0) $display ("Passed all tests");
         else $display ("FAILED");
 
         $stop;
