@@ -1,23 +1,33 @@
-`define S_DECODE 4'b0001
-`define S_WriteImm 4'b0010
-`define S_GetA 4'b0011
-`define S_GetB 4'b0100
-`define S_ALU 4'b0101
-`define S_WriteReg 4'b0110
-`define S_COMP 4'b0111
+`define S_ERROR 5'b00000
+`define S_DECODE 5'b00001
+`define S_WriteImm 5'b00010
+`define S_GetA 5'b00011
+`define S_GetB 5'b00100
+`define S_ALU 5'b00101
+`define S_WriteReg 5'b00110
+`define S_COMP 5'b00111
 
 // More states to load PC
-`define S_RST 4'b1000
-`define S_IF1 4'b1001 
-`define S_IF2 4'b1010
-`define S_UPDATE_PC 4'b1011
+`define S_RST 5'b01000
+`define S_IF1 5'b01001 
+`define S_IF2 5'b01010
+`define S_UPDATE_PC 5'b01011
 
 // LOAD AND STORE STATES
-`define S_MEM_LOADA 4'b1100
-`define S_MEM_LOADB 4'b1101
-`define S_GET_ADDR 4'b1110
-`define S_LOAD_ADDR 4'b1111
-`define S_WRITE_REG 4'b0000
+
+// LDR: MEM_LOADA -> CALCULATE_ADR -> LOAD_ADR 
+//      FETCH -> WRITE_REG
+// STR: MEM_LOADA -> LOADB -> CALCULATE_ADR -> LOAD_ADR 
+//      WRITE_MEM
+
+`define S_MEM_LOADA 5'b01100
+`define S_MEM_LOADB 5'b01101
+`define S_CALCULATE_ADDR 5'b01110
+`define S_LOAD_ADDR 5'b01111
+`define S_MEM_TO_REG 5'b10000
+`define S_WRITE_MEM 5'b10001
+`define S_FETCH 5'b10010
+
 
 // VSEL SIGNALS
 `define VSEL_C 2'b00
@@ -50,11 +60,11 @@
 */
 
 module StateController(
-    input [2:0] opcode,
+    input [2:0] opcode, in_shift,
     input [1:0] op,
     input clk, rst, // removed s
     output reg loadc, loads, loada, loadb, write,
-    output reg [2:0] nsel,
+    output reg [2:0] nsel, sh
     output reg [1:0] vsel, sel,
 
     // PC and Memory control
@@ -81,7 +91,7 @@ module StateController(
     */
    
    
-    reg [3:0] currentState;
+    reg [4:0] currentState;
     reg [3:0] allLoad;
     
     assign {loads, loadc, loadb, loada} = allLoad;
@@ -191,7 +201,7 @@ module StateController(
             begin
                 if (opcode == `OPCODE_LDR) begin
                     currentState = S_GET_ADDR;
-                end else begin
+                end else if (opcode == `OPCODE_STR) begin
                     currentState = S_MEM_LOADB;
                 end
             end
@@ -201,10 +211,23 @@ module StateController(
                 currentState = `S_GET_ADDR;
             end
             
-            `S_MEM_LOADB:
+            `S_GET_ADDR:
             begin
                 currentState = `S_LOAD_ADDR;
             end
+
+            `S_LOAD_ADDR:
+            begin
+                if (opcode == `OPCODE_LDR) begin
+                    currentState = `S_FETCH;
+                end else if (opcode == `OPCODE_STR) begin
+                    currentState = `S_WRITE_MEM;
+                end else if currentState = `S_WAIT;  
+            end
+
+            `S_FETCH: currentState = `S_MEM_TO_REG;
+            `S_MEM_TO_REG: currentState = `S_IF1;
+            `S_WRITE_MEM: currentState = `S_IF1;
 
             default: 
             begin
@@ -222,6 +245,7 @@ module StateController(
         vsel = `VSEL_C;
         write = 1'b0;
 		nsel = 3'b000;
+        shift = 2'b00;
 
         // MEMORY AND PC COMMANDS
         reset_pc = 1'b0;
@@ -261,6 +285,7 @@ module StateController(
             
             `S_ALU: begin
                 allLoad = 4'b0100;
+                shift = in_shift;
 
                 // IF opcode == 3'b110 (MOV) or op = 2'b11 (MVN)
                 if ((opcode == 3'b110) || (op == 2'b11)) begin
@@ -268,6 +293,10 @@ module StateController(
                 end else sel = 2'b00;
 
             end  
+
+            `S_COMP: begin
+                allLoad = 4'b1000;
+            end
 
             `S_GetA: begin
                 allLoad = 4'b0001;
@@ -287,12 +316,47 @@ module StateController(
             
             `S_WriteReg: begin
                 vsel = `VSEL_C;
-                write = 1'b1;
-                nsel = 3'b100;
             end 
+            
+            `S_MEM_LOADA: begin
+                allLoad = 4'b0001;
+                nsel = `SEL_N;
+            end
 
-            `S_COMP: begin
-                allLoad = 4'b1000;
+            `S_MEM_LOADB: begin
+                allLoad = 4'b0010;
+                nsel = `SEL_D;
+            end
+        
+            `S_CALCULATE_ADDR: begin
+                sel = 2'b01;
+                allLoad = 4'b0100;
+                shift = 2'b00;
+            end
+
+            `S_LOAD_ADDR: begin
+                load_addr = 1'b1;
+                shift = 2'b00;
+                if (opcode == `OPCODE_STR) begin
+                    sel = 2'b10;
+                end
+
+            end
+            
+            `S_FETCH: begin
+                addr_sel = 1'b0;
+                mem_cmd = `MREAD;
+            end
+
+            `S_MEM_TO_REG: begin
+                nsel = `SEL_D;
+                vsel = `VSEL_MDATA;
+                write = 1'b1;
+            end
+
+            `S_WRITE_MEM: begin
+                addr_sel = 1'b0;
+                mem_cmd = `MWRITE;
             end
 
         endcase

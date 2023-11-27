@@ -30,7 +30,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
     reg [1:0] op;
     reg [2:0] Rn;       // 1st operand
     reg [2:0] Rd;       // destination reg
-    reg [1:0] sh;       // shift value
+    reg [1:0] in_shift;       // shift value
     reg [2:0] Rm;       // 2nd operand
     wire [7:0] imm8;    // ALT: 8 bit immediate
 
@@ -48,7 +48,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
 
     // signals from FSM
     reg loads, loadb, loadc, loada, write;
-    reg [2:0] nsel;
+    reg [2:0] nsel, sh;
     reg [1:0] vsel, sel;
 
     // ====== SIGN EXTENSION on IMM8
@@ -73,7 +73,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
     //////////////////////////////////// PREVIOUS VERSION /////////////////////////////////////////////////
 
     // DECODER, determines parameters
-    InstructionDecoder Dec (next_instruction, opcode, op, Rn, Rd, sh, Rm, imm8);
+    InstructionDecoder Dec (next_instruction, opcode, op, Rn, Rd, in_shift, Rm, imm8);
 
     // Instantiation of PC controller
     pc_controller PC_CON(
@@ -112,6 +112,8 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
                         .load_ir(load_ir),  // loads new instruction
                         .load_addr(load_addr), // loads new address to read/write
                         .mem_cmd(mem_cmd)
+                        .in_shift (in_shift)
+                        .sh (sh)
                                                             );
 
     
