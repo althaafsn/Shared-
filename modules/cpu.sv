@@ -48,8 +48,8 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
 
     // signals from FSM
     reg loads, loadb, loadc, loada, write;
-    reg [2:0] nsel, sh;
-    reg [1:0] vsel, sel;
+    reg [2:0] nsel;
+    reg [1:0] vsel, sel, sh;
 
     // ====== SIGN EXTENSION on IMM8
     wire [15:0] sximm8 = {{8{imm8[7]}}, imm8};
@@ -57,7 +57,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
     
     // MEMORY
     // NOW connect PC to the pc_con module, and m_data to read_data.
-    reg [15:0] mdata = read_data;
+    wire [15:0] mdata = read_data;
     reg [15:0] pc = 0;
     reg [8:0] dataAddress; // CHANGE THIS
 
@@ -111,8 +111,8 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
                         .addr_sel(addr_sel),
                         .load_ir(load_ir),  // loads new instruction
                         .load_addr(load_addr), // loads new address to read/write
-                        .mem_cmd(mem_cmd)
-                        .in_shift (in_shift)
+                        .mem_cmd(mem_cmd),
+                        .in_sh (in_shift),
                         .sh (sh)
                                                             );
 

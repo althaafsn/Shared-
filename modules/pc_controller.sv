@@ -7,7 +7,7 @@ module pc_controller (
     output reg [8:0] pc
 );
 
-    reg [8:0] next_pc = reset_pc ? 9'b0 : pc + 1;   
+    wire [8:0] next_pc = reset_pc ? 9'd0 : pc + 1;   
 
     always_ff @(posedge clk) begin
         if (load_pc) begin

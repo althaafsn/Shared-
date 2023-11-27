@@ -812,12 +812,12 @@ module cpuTest_RAM();
             err = 1'b1;
         end
 
-        #10
+        #10;
         // Instruction is fetched, load instruction.
 
         #10;
         // Instruction is loaded, PC should update
-        $display("\n Test if instruction is loaded properly")
+        $display("\n Test if instruction is loaded properly");
         assert (loadedInstruction == read_data) $display("Instruction loaded properly");
         else begin
             $display("INSTRUCTION IS NOT LOADED");

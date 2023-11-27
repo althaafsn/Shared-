@@ -60,16 +60,16 @@
 */
 
 module StateController(
-    input [2:0] opcode, in_shift,
-    input [1:0] op,
+    input [2:0] opcode,
+    input [1:0] op, in_sh,
     input clk, rst, // removed s
     output reg loadc, loads, loada, loadb, write,
-    output reg [2:0] nsel, sh
-    output reg [1:0] vsel, sel,
+    output reg [2:0] nsel, 
+    output reg [1:0] vsel, sel, sh,
 
     // PC and Memory control
     output reg reset_pc, load_pc, addr_sel, load_ir, load_addr,
-    output reg [2:0] mem_cmd
+    output reg [1:0] mem_cmd
     );
 
     /*
@@ -200,18 +200,18 @@ module StateController(
             `S_MEM_LOADA: 
             begin
                 if (opcode == `OPCODE_LDR) begin
-                    currentState = S_GET_ADDR;
+                    currentState = `S_CALCULATE_ADDR;
                 end else if (opcode == `OPCODE_STR) begin
-                    currentState = S_MEM_LOADB;
+                    currentState = `S_MEM_LOADB;
                 end
             end
 
             `S_MEM_LOADB:
             begin
-                currentState = `S_GET_ADDR;
+                currentState = `S_CALCULATE_ADDR;
             end
             
-            `S_GET_ADDR:
+            `S_CALCULATE_ADDR:
             begin
                 currentState = `S_LOAD_ADDR;
             end
@@ -222,7 +222,7 @@ module StateController(
                     currentState = `S_FETCH;
                 end else if (opcode == `OPCODE_STR) begin
                     currentState = `S_WRITE_MEM;
-                end else if currentState = `S_WAIT;  
+                end   
             end
 
             `S_FETCH: currentState = `S_MEM_TO_REG;
@@ -245,7 +245,7 @@ module StateController(
         vsel = `VSEL_C;
         write = 1'b0;
 		nsel = 3'b000;
-        shift = 2'b00;
+        sh = 2'b00;
 
         // MEMORY AND PC COMMANDS
         reset_pc = 1'b0;
@@ -285,7 +285,7 @@ module StateController(
             
             `S_ALU: begin
                 allLoad = 4'b0100;
-                shift = in_shift;
+                sh = in_sh;
 
                 // IF opcode == 3'b110 (MOV) or op = 2'b11 (MVN)
                 if ((opcode == 3'b110) || (op == 2'b11)) begin
@@ -296,7 +296,7 @@ module StateController(
 
             `S_COMP: begin
                 allLoad = 4'b1000;
-                shift = in_shift;
+                sh = in_sh;
             end
 
             `S_GetA: begin
@@ -330,16 +330,17 @@ module StateController(
             end
         
             `S_CALCULATE_ADDR: begin
-                sel = 2'b01;
+                sel = 2'b10;
                 allLoad = 4'b0100;
-                shift = 2'b00;
+                sh = 2'b00;
             end
 
             `S_LOAD_ADDR: begin
                 load_addr = 1'b1;
-                shift = 2'b00;
+                sh = 2'b00;
                 if (opcode == `OPCODE_STR) begin
-                    sel = 2'b10;
+                    sel = 2'b01;
+                    allLoad = 4'b0100;
                 end
 
             end

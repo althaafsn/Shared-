@@ -10,7 +10,7 @@ cModel Technology
 dD:/UBC/Courses/2023W1/CPEN_211/LPT 3/LPT 3 2023
 vALU
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1701041102
+Z1 !s110 1701076039
 !i10b 1
 !s100 F<JBgPQZART7_5]CLPL<]1
 IS?P0oj_n0PB4KH[i]kWnc3
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1701041102.000000
+Z6 !s108 1701076039.000000
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
 !i113 1
@@ -35,7 +35,7 @@ Z8 tCvgOpt 0
 n@a@l@u
 vALU_test
 R0
-Z9 !s110 1701041103
+Z9 !s110 1701076041
 !i10b 1
 !s100 i@46NChA^Zc5Rmn8TM<NI3
 Il8Dgg8ZOYNm=X?_KE0Kd;2
@@ -51,7 +51,7 @@ R5
 r1
 !s85 0
 31
-Z10 !s108 1701041103.000000
+Z10 !s108 1701076041.000000
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
 !i113 1
@@ -62,13 +62,13 @@ vcpu
 R0
 R1
 !i10b 1
-!s100 ZoPnezf>U<1ZkPVd_jN;32
-I0llI]_KJ:P;bZKXNNXDm_3
+!s100 CR<3fd2L0`XD9B07L:Znb0
+I@V7B`0iP4zn`1?UdGKTBR0
 R2
 !s105 cpu_sv_unit
 S1
 R3
-w1701040754
+w1701073134
 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
 L0 16
@@ -109,15 +109,15 @@ R8
 ncpu@test
 vcpuTest_RAM
 R0
-!s110 1701041045
+R9
 !i10b 1
-!s100 m?lFWK6_<@45`B1]DA0d12
-I09Q3^3ZcHBZ72>?aLz^3M2
+!s100 16hVIj=KCc3NTIikh<8EW0
+IK?bgXM[AkWSL`U5V8RW<W3
 R2
 !s105 cpu_tb_sv_unit
 S1
 R3
-w1701041042
+w1701066598
 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
 L0 737
@@ -125,7 +125,7 @@ R5
 r1
 !s85 0
 31
-!s108 1701041045.000000
+R10
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
 !i113 1
@@ -134,7 +134,7 @@ R8
 ncpu@test_@r@a@m
 vdatapath
 R0
-R1
+Z11 !s110 1701076040
 !i10b 1
 !s100 =jF:5mN;0b43Q<c==RK3L0
 IbPRVB]]F;kfB:]<Q<1P5R1
@@ -150,7 +150,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z12 !s108 1701076040.000000
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
 !i113 1
@@ -182,31 +182,31 @@ R7
 R8
 vinput_iface
 R0
-R9
+R11
 !i10b 1
 !s100 m:haSVhf5F=jKJkSU:z1T2
 I:K9Z3WNZCSbKBDo58gJad3
 R2
-Z11 !s105 lab6_top_sv_unit
+Z13 !s105 lab6_top_sv_unit
 S1
 R3
 R4
-Z12 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
-Z13 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
+Z14 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
+Z15 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
 L0 88
 R5
 r1
 !s85 0
 31
-R10
-Z14 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
-Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
+R12
+Z16 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
+Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
 !i113 1
 R7
 R8
 vInstructionDecoder
 R0
-R9
+R11
 !i10b 1
 !s100 9m2k@gRY0DULaQCFLFcUW0
 I]M:F1DhHHSlfbO@ZD]lKH1
@@ -222,7 +222,7 @@ R5
 r1
 !s85 0
 31
-R6
+R12
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
 !i113 1
@@ -231,39 +231,137 @@ R8
 n@instruction@decoder
 vlab6_top
 R0
-R9
+R11
 !i10b 1
 !s100 [nKjfk`4cQNg2aemmW:a83
 IONlk1e7YRAT7m<>@W>[382
 R2
-R11
+R13
 S1
 R3
 R4
-R12
-R13
+R14
+R15
 L0 52
 R5
 r1
 !s85 0
 31
-R10
-R14
-R15
+R12
+R16
+R17
 !i113 1
 R7
 R8
+vlab7_check_tb
+R0
+R11
+!i10b 1
+!s100 G><iLm_;M3mT=[TJ7n0`30
+I[V<5F0c6kUD8z>kYPF90G3
+R2
+!s105 lab7_autograder_check_sv_unit
+S1
+R3
+w1701070231
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv|
+!i113 1
+R7
+R8
+vlab7_top
+R0
+R9
+!i10b 1
+!s100 hoUzK74oJHY::AjP[`^X41
+I^[X5D7dIIER>nLES1547L3
+R2
+Z18 !s105 lab7_top_sv_unit
+S1
+R3
+Z19 w1701076034
+Z20 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
+Z21 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
+L0 98
+R5
+r1
+!s85 0
+31
+R10
+Z22 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
+Z23 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
+!i113 1
+R7
+R8
+vlightsControl
+R0
+R9
+!i10b 1
+!s100 7l]iE:lYH;[1I[C[MZ>zG3
+ITXg0h<^WBE@ZUT4XSBUAP0
+R2
+R18
+S1
+R3
+R19
+R20
+R21
+L0 83
+R5
+r1
+!s85 0
+31
+R10
+R22
+R23
+!i113 1
+R7
+R8
+nlights@control
+vMemory_Control
+R0
+!s110 1701066925
+!i10b 1
+!s100 j4fzh7PT?5hXD18mMmnm_1
+I4khBLB3Y[gBDk3>o;Bol03
+R2
+R18
+S1
+R3
+w1701066918
+R20
+R21
+L0 37
+R5
+r1
+!s85 0
+31
+!s108 1701066925.000000
+R22
+R23
+!i113 1
+R7
+R8
+n@memory_@control
 vpc_controller
 R0
-R1
+Z24 !s110 1701076038
 !i10b 1
-!s100 ozmmnZ@V@RGW1lR^8>@f<1
-I@@z^1:3k7gL_zHGAd4T7G2
+!s100 e^gDRGB4aiPAQJ@mh2ahD2
+IzAS[a@V<hI5njlJc_KTPo2
 R2
 !s105 pc_controller_sv_unit
 S1
 R3
-w1701039952
+w1701068819
 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
 L0 3
@@ -271,7 +369,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z25 !s108 1701076038.000000
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
 !i113 1
@@ -279,7 +377,7 @@ R7
 R8
 vRAM
 R0
-R1
+R24
 !i10b 1
 !s100 3_giZ3RmWC5H06CnTcN@;0
 IB<KBz5ZX6AXFmPoUEW`9D2
@@ -295,7 +393,7 @@ R5
 r1
 !s85 0
 31
-R6
+R25
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
 !i113 1
@@ -320,7 +418,7 @@ R5
 r1
 !s85 0
 31
-R6
+R25
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
 !i113 1
@@ -352,7 +450,7 @@ R7
 R8
 vshifter_tb
 R0
-R9
+R11
 !i10b 1
 !s100 Nk[8JKa1;Y_gj^_gO6VY`2
 IgOKQEbKflhH2Z_0^JIIPY1
@@ -368,7 +466,7 @@ R5
 r1
 !s85 0
 31
-R10
+R12
 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
 !i113 1
@@ -376,25 +474,25 @@ R7
 R8
 vsseg
 R0
-R9
+R11
 !i10b 1
 !s100 CT;a5?>l9eFJGI8VL6Ch11
 IL=6VoD[X?;@oK[ggl1a_b3
 R2
-R11
+R13
 S1
 R3
 R4
-R12
-R13
+R14
+R15
 L0 109
 R5
 r1
 !s85 0
 31
-R10
-R14
-R15
+R12
+R16
+R17
 !i113 1
 R7
 R8
@@ -402,16 +500,16 @@ vStateController
 R0
 R1
 !i10b 1
-!s100 aKAgfK9QcPV;3F>1]8IH30
-I22jCFBem5i@4nG8RWj:Lf0
+!s100 BoSG9F?^zT[e[>K<[V4>51
+IgDYB^DJ:IAQZ23GTj8;oo2
 R2
 !s105 state_controller_sv_unit
 S1
 R3
-w1701040021
+w1701074135
 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
-L0 33
+L0 62
 R5
 r1
 !s85 0
@@ -423,27 +521,52 @@ R6
 R7
 R8
 n@state@controller
-vvDFF
+vswitchControl
 R0
 R9
 !i10b 1
-!s100 0]ab@Ahg`zi5hR[7X6FBb3
-IE8oemmEE`]zC[]<F01@P>3
+!s100 VRPM8Um<n?JU^BgzCiYYh1
+I;=QbMTE76hzDAIMXTl_b80
 R2
-R11
+R18
 S1
 R3
-R4
-R12
-R13
-L0 99
+R19
+R20
+R21
+L0 68
 R5
 r1
 !s85 0
 31
 R10
+R22
+R23
+!i113 1
+R7
+R8
+nswitch@control
+vvDFF
+R0
+R11
+!i10b 1
+!s100 0]ab@Ahg`zi5hR[7X6FBb3
+IE8oemmEE`]zC[]<F01@P>3
+R2
+R13
+S1
+R3
+R4
 R14
 R15
+L0 99
+R5
+r1
+!s85 0
+31
+R12
+R16
+R17
 !i113 1
 R7
 R8

@@ -29,7 +29,7 @@ module lab7_check_tb;
     if (DUT.MEM.mem[4] !== 16'b1110000000000000) begin err = 1; $display("FAILED: mem[4] wrong; please set data.txt using Figure 6"); $stop; end
     if (DUT.MEM.mem[5] !== 16'b1010101111001101) begin err = 1; $display("FAILED: mem[4] wrong; please set data.txt using Figure 6"); $stop; end
 
-    @(negedge clk); // wait until next falling edge of clock
+    @(negedge KEY[0]); // wait until next falling edge of clock
 
     KEY[1] = 1'b1; // reset de-asserted, PC still undefined if as in Figure 4
 
@@ -59,10 +59,14 @@ module lab7_check_tb;
 
     @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 5 *after* executing STR R1, [R2]
    
+    $display ("Interfaace OK");
+
     if (DUT.CPU.PC !== 9'h5) begin err = 1; $display("FAILED: PC should be 5."); $stop; end
     if (DUT.MEM.mem[6] !== 16'hABCD) begin err = 1; $display("FAILED: mem[6] wrong; looks like your STR isn't working"); $stop; end
 
     // NOTE: if HALT is working, PC won't change again...
+
+    $display ("Interfaace OK");
 
     if (~err) $display("INTERFACE OK");
     $stop;
