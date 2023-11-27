@@ -36,7 +36,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
 
     // Input and output signals for PC controller
     reg reset_pc, load_pc;
-    reg [8:0] pc_out;
+    reg [8:0] PC;
 
     // Instruction Register
     reg [15:0] next_instruction;
@@ -59,7 +59,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
     // NOW connect PC to the pc_con module, and m_data to read_data.
     reg [15:0] mdata = read_data;
     reg [15:0] pc = 0;
-    reg [8:0] dataAddress = 9'b0; // CHANGE THIS
+    reg [8:0] dataAddress; // CHANGE THIS
 
 
     // TO DATAPATH
@@ -80,7 +80,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
         .clk(clk),
         .reset_pc(reset_pc),
         .load_pc(load_pc),
-        .pc(pc_out)
+        .pc(PC)
     );
 
     // pass OpCode and op to FSM
@@ -159,7 +159,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
     end
 
     // ====== ADDRESS SELECT
-    assign mem_addr = addr_sel ? pc_out : dataAddress;
+    assign mem_addr = addr_sel ? PC : dataAddress;
 
 
 // ============================== REGISTERS ====================================
@@ -176,7 +176,7 @@ module cpu(clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
 
         /////////////////// LOADING DATA_ADDRESS //////////////////////////////////////////
         if (load_addr == 1'b1) begin
-            dataAddress = out;
+            dataAddress = out[8:0];
         end else dataAddress = dataAddress;
 
     end

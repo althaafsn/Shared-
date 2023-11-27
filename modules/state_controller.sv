@@ -296,6 +296,7 @@ module StateController(
 
             `S_COMP: begin
                 allLoad = 4'b1000;
+                shift = in_shift;
             end
 
             `S_GetA: begin
@@ -351,6 +352,7 @@ module StateController(
             `S_MEM_TO_REG: begin
                 nsel = `SEL_D;
                 vsel = `VSEL_MDATA;
+                mem_cmd = `MREAD;
                 write = 1'b1;
             end
 

@@ -59,13 +59,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	lab6_top
 
-} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module cpu
-
-Top level modules:
-	cpu
-
 } {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module InstructionDecoder
