@@ -1,5 +1,3 @@
-
-`define S_WAIT 4'b0000
 `define S_DECODE 4'b0001
 `define S_WriteImm 4'b0010
 `define S_GetA 4'b0011
@@ -15,9 +13,11 @@
 `define S_UPDATE_PC 4'b1011
 
 // LOAD AND STORE STATES
-`define S_SHIFT_MEM 4'b1100
-`define S_LOAD_ADDR
-`define S_HALT
+`define S_MEM_LOADA 4'b1100
+`define S_MEM_LOADB 4'b1101
+`define S_GET_ADDR 4'b1110
+`define S_LOAD_ADDR 4'b1111
+`define S_WRITE_REG 4'b0000
 
 // VSEL SIGNALS
 `define VSEL_C 2'b00
@@ -34,6 +34,11 @@
 `define MNONE 2'b00     // Does nothing to the RAM
 `define MREAD 2'b01     // Reads data from RAM
 `define MWRITE 2'b10    // Write data to RAM
+
+// MEM_OPS
+`define OPCODE_LDR 3'b011
+`define OPCODE_STR 3'b100
+`define OPCODE_HALT 3'b111
 
 /*
 
@@ -128,8 +133,11 @@ module StateController(
                 end else if (opcode == 3'b101 || 
                             (opcode == 3'b110 && op == 2'b00)) begin
                     currentState = `S_GetA;
-                end else if (opcode == 3'b111) begin
-                    currentState = `S_DECODE 
+                end else if (opcode == `OPCODE_LDR 
+                            || opcode == `OPCODE_STR) begin 
+                    currentState = `S_MEM_LOADA;
+                end else if (opcode == `OPCODE_HALT) begin
+                    currentState = `S_DECODE;
                 end
             end
 
@@ -178,6 +186,25 @@ module StateController(
             begin
                 currentState = `S_IF1;  
             end 
+
+            `S_MEM_LOADA: 
+            begin
+                if (opcode == `OPCODE_LDR) begin
+                    currentState = S_GET_ADDR;
+                end else begin
+                    currentState = S_MEM_LOADB;
+                end
+            end
+
+            `S_MEM_LOADB:
+            begin
+                currentState = `S_GET_ADDR;
+            end
+            
+            `S_MEM_LOADB:
+            begin
+                currentState = `S_LOAD_ADDR;
+            end
 
             default: 
             begin
