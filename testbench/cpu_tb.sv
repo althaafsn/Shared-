@@ -22,7 +22,16 @@
 `define R_1 2'b10
 `define ASR 2'b11
 
+// MEMORY COMMANDS
 
+`define MNONE 2'b00     // Does nothing to the RAM
+`define MREAD 2'b01     // Reads data from RAM
+`define MWRITE 2'b10    // Write data to RAM
+
+// CLOCK DELAY
+`define CLK_DELAY 5
+
+// DEPRECATED
 module cpuTest();
 
     reg [15:0] sim_in, sim_out;
@@ -720,6 +729,119 @@ module cpuTest();
         assert (err == 0) $display ("Passed all tests");
         else $display ("FAILED");
 
+        $stop;
+    end
+
+endmodule
+
+module cpuTest_RAM();
+    
+    /*
+        
+        @althaafsn
+
+        TESTBENCH WORKFLOW:
+        == TASK 1: test that instruction successfully loads from memory (@Kenrick-MH)
+        == TASK 2: Test output is correct
+        == TASK 3: Test that the next address correct.
+
+
+    */
+
+    reg clk, reset;
+    reg [1:0] mem_cmd;
+    reg [8:0] mem_addr;
+    reg [15:0] read_data; // simulates whatever comes out of the memory;
+    reg [15:0] out;
+
+    reg [15:0] defaultMem = 16'b1101000000000111;
+    reg err;
+
+    // STATUS BITS
+    reg N, V, Z;
+
+    // registers
+    wire signed [15:0] allRegs [7:0];
+
+    assign allRegs = {DUT.DP.REGFILE.R7,
+                        DUT.DP.REGFILE.R6, 
+                        DUT.DP.REGFILE.R5, 
+                        DUT.DP.REGFILE.R4, 
+                        DUT.DP.REGFILE.R3, 
+                        DUT.DP.REGFILE.R2, 
+                        DUT.DP.REGFILE.R1, 
+                        DUT.DP.REGFILE.R0}; 
+
+    wire [15:0] loadedInstruction = DUT.next_instruction;
+
+    cpu DUT (clk,reset, mem_cmd, mem_addr, read_data, out, N,V,Z);
+
+    // clock 
+    initial forever begin
+        clk = 1'b0; #5;
+        clk = 1'b1; #5;
+    end
+
+    initial begin
+        err = 1'b0;
+        read_data = 16'b0;
+        reset = 1'b1;
+
+        // Reset the CPU 
+        #10;
+        reset = 1'b0;
+
+        // PC should be updated
+        #10;
+        
+        // CPU should now query the memory
+        $display ("\nTESTING ADDRESS FROM PC");
+        
+        // mem_addr should be 0
+        assert (mem_addr == 16'h00) $display("Correct memory to read!");
+        else begin
+            $display("ERROR | expected 0x00 but got %h", mem_addr);
+            err = 1'b1;
+        end
+        
+        assert (mem_cmd == `MREAD) begin 
+            $display("Correct command");
+            read_data = defaultMem;
+        end else begin
+            $display("ERROR: Incorrect Commmand");
+            err = 1'b1;
+        end
+
+        #10
+        // Instruction is fetched, load instruction.
+
+        #10;
+        // Instruction is loaded, PC should update
+        $display("\n Test if instruction is loaded properly")
+        assert (loadedInstruction == read_data) $display("Instruction loaded properly");
+        else begin
+            $display("INSTRUCTION IS NOT LOADED");
+            err = 1'b1;
+        end
+
+        #10
+        // DECODE STAGE
+
+        #10 
+        // MOV IMM
+
+        #10
+        // RESULTS SHOULD BE OUT, R0 should be 7
+        $display ("\nTESTING STORED VALUE");
+        assert (allRegs[0] == 7) $display ("Overwrite to R0 sucessful!");
+        else begin 
+            $display ("Overwrite to R0 failed, got %d instead of 7", allRegs[0]);
+            err = 1'b1;
+        end
+
+
+        assert (err == 0) $display ("Passed all tests");
+        else $display ("FAILED");
         $stop;
     end
 

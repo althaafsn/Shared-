@@ -1,0 +1,450 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/UBC/Courses/2023W1/CPEN_211/LPT 3/LPT 3 2023
+vALU
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1701041102
+!i10b 1
+!s100 F<JBgPQZART7_5]CLPL<]1
+IS?P0oj_n0PB4KH[i]kWnc3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 alu_sv_unit
+S1
+Z3 dD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-
+Z4 w1701024879
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1701041102.000000
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@a@l@u
+vALU_test
+R0
+Z9 !s110 1701041103
+!i10b 1
+!s100 i@46NChA^Zc5Rmn8TM<NI3
+Il8Dgg8ZOYNm=X?_KE0Kd;2
+R2
+!s105 alu_tb_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv
+L0 6
+R5
+r1
+!s85 0
+31
+Z10 !s108 1701041103.000000
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
+!i113 1
+R7
+R8
+n@a@l@u_test
+vcpu
+R0
+R1
+!i10b 1
+!s100 ZoPnezf>U<1ZkPVd_jN;32
+I0llI]_KJ:P;bZKXNNXDm_3
+R2
+!s105 cpu_sv_unit
+S1
+R3
+w1701040754
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
+L0 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv|
+!i113 1
+R7
+R8
+vcpuTest
+R0
+R9
+!i10b 1
+!s100 oF;oi_=Yi4aQfMhJNT1j20
+I>HJD8`70ZTDRDYJU:]o6S3
+R2
+!s105 cpu_tb_gate_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv
+L0 25
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv|
+!i113 1
+R7
+R8
+ncpu@test
+vcpuTest_RAM
+R0
+!s110 1701041045
+!i10b 1
+!s100 m?lFWK6_<@45`B1]DA0d12
+I09Q3^3ZcHBZ72>?aLz^3M2
+R2
+!s105 cpu_tb_sv_unit
+S1
+R3
+w1701041042
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
+L0 737
+R5
+r1
+!s85 0
+31
+!s108 1701041045.000000
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
+!i113 1
+R7
+R8
+ncpu@test_@r@a@m
+vdatapath
+R0
+R1
+!i10b 1
+!s100 =jF:5mN;0b43Q<c==RK3L0
+IbPRVB]]F;kfB:]<Q<1P5R1
+R2
+!s105 datapath_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv
+L0 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
+!i113 1
+R7
+R8
+vdatapath_tb
+R0
+R9
+!i10b 1
+!s100 9g;UjAG1S=H3]EJGmaOTX2
+I3Zi]LO?cEHk>12J[=0GaB2
+R2
+!s105 datapath_tb_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv
+L0 38
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv|
+!i113 1
+R7
+R8
+vinput_iface
+R0
+R9
+!i10b 1
+!s100 m:haSVhf5F=jKJkSU:z1T2
+I:K9Z3WNZCSbKBDo58gJad3
+R2
+Z11 !s105 lab6_top_sv_unit
+S1
+R3
+R4
+Z12 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
+Z13 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
+L0 88
+R5
+r1
+!s85 0
+31
+R10
+Z14 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
+!i113 1
+R7
+R8
+vInstructionDecoder
+R0
+R9
+!i10b 1
+!s100 9m2k@gRY0DULaQCFLFcUW0
+I]M:F1DhHHSlfbO@ZD]lKH1
+R2
+!s105 instructionDecoder_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
+!i113 1
+R7
+R8
+n@instruction@decoder
+vlab6_top
+R0
+R9
+!i10b 1
+!s100 [nKjfk`4cQNg2aemmW:a83
+IONlk1e7YRAT7m<>@W>[382
+R2
+R11
+S1
+R3
+R4
+R12
+R13
+L0 52
+R5
+r1
+!s85 0
+31
+R10
+R14
+R15
+!i113 1
+R7
+R8
+vpc_controller
+R0
+R1
+!i10b 1
+!s100 ozmmnZ@V@RGW1lR^8>@f<1
+I@@z^1:3k7gL_zHGAd4T7G2
+R2
+!s105 pc_controller_sv_unit
+S1
+R3
+w1701039952
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
+!i113 1
+R7
+R8
+vRAM
+R0
+R1
+!i10b 1
+!s100 3_giZ3RmWC5H06CnTcN@;0
+IB<KBz5ZX6AXFmPoUEW`9D2
+R2
+!s105 MEM_sv_unit
+S1
+R3
+w1701026304
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
+!i113 1
+R7
+R8
+n@r@a@m
+vregfile
+R0
+R1
+!i10b 1
+!s100 g_Onz3TV:J>`=lAo9?o[21
+IYd1c>EhEa4bZM?0CcLIhe2
+R2
+!s105 regfile_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
+!i113 1
+R7
+R8
+vshifter
+R0
+R1
+!i10b 1
+!s100 zXJAAU`PT@A?4QcW`Mf3]2
+I5A0Z0`4iVd54JVz[=L`OX0
+R2
+!s105 shifter_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv|
+!i113 1
+R7
+R8
+vshifter_tb
+R0
+R9
+!i10b 1
+!s100 Nk[8JKa1;Y_gj^_gO6VY`2
+IgOKQEbKflhH2Z_0^JIIPY1
+R2
+!s105 shifter_tb_sv_unit
+S1
+R3
+R4
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
+!i113 1
+R7
+R8
+vsseg
+R0
+R9
+!i10b 1
+!s100 CT;a5?>l9eFJGI8VL6Ch11
+IL=6VoD[X?;@oK[ggl1a_b3
+R2
+R11
+S1
+R3
+R4
+R12
+R13
+L0 109
+R5
+r1
+!s85 0
+31
+R10
+R14
+R15
+!i113 1
+R7
+R8
+vStateController
+R0
+R1
+!i10b 1
+!s100 aKAgfK9QcPV;3F>1]8IH30
+I22jCFBem5i@4nG8RWj:Lf0
+R2
+!s105 state_controller_sv_unit
+S1
+R3
+w1701040021
+8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
+FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
+L0 33
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv|
+!i113 1
+R7
+R8
+n@state@controller
+vvDFF
+R0
+R9
+!i10b 1
+!s100 0]ab@Ahg`zi5hR[7X6FBb3
+IE8oemmEE`]zC[]<F01@P>3
+R2
+R11
+S1
+R3
+R4
+R12
+R13
+L0 99
+R5
+r1
+!s85 0
+31
+R10
+R14
+R15
+!i113 1
+R7
+R8
+nv@d@f@f

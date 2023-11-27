@@ -1,0 +1,109 @@
+{D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv} {2 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath_tb
+** Warning: D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv(413): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	datapath_tb
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv} {0 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpuTest
+-- Compiling module cpuTest_RAM
+** Error: (vlog-13069) D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv(821): near "assert": syntax error, unexpected "SystemVerilog keyword 'assert' ", expecting ';'.
+** Error: (vlog-13069) D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv(827): near "#": syntax error, unexpected '#'.
+** Error: D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv(839): (vlog-13205) Syntax error found in the scope following 'err'. Is there a missing '::'?
+
+} {5.0 8.0} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpuTest
+
+Top level modules:
+	cpuTest
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab6_top
+-- Compiling module input_iface
+-- Compiling module vDFF
+-- Compiling module sseg
+
+Top level modules:
+	lab6_top
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstructionDecoder
+
+Top level modules:
+	InstructionDecoder
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter_tb
+
+Top level modules:
+	shifter_tb
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_test
+
+Top level modules:
+	ALU_test
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pc_controller
+
+Top level modules:
+	pc_controller
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv} {1 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv} {0 {vlog -work work -sv -stats=none {D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_check_tb
+** Error: D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv(32): (vlog-2730) Undefined variable: 'clk'.
+
+} {4.0 5.0} {}}
