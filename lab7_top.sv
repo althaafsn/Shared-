@@ -134,19 +134,19 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     assign enable_SW = (mem_addr == 9'h140) & (mem_cmd == `MREAD);
     assign read_data = enable_SW ? {8'h00, SW[7:0]} :  enable_read ? dout : {16{1'bz}};
 
-    always_comb begin
-        
-        read_data = {16{1'bz}}
-
-        if ((mem_cmd == `MREAD)) begin
-            if (mem_addr[8] == 1'b0) begin
-                read_data = dout;
-            end else if (mem_addr == 9'h140) begin
-                read_data = 
-            end
-        end;
-
-    end
+//    always_comb begin
+//        
+//        read_data = {16{1'bz}}
+//
+//        if ((mem_cmd == `MREAD)) begin
+//            if (mem_addr[8] == 1'b0) begin
+//                read_data = dout;
+//            end else if (mem_addr == 9'h140) begin
+//                read_data = 
+//            end
+//        end;
+//
+//    end
 
     always_ff @(posedge clk) begin
         if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
