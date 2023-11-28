@@ -317,6 +317,8 @@ module StateController(
             
             `S_WriteReg: begin
                 vsel = `VSEL_C;
+                write = 1'b1;
+                nsel = `SEL_D;
             end 
             
             `S_MEM_LOADA: begin

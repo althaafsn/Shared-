@@ -103,7 +103,8 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
 
     reg [8:0] mem_addr;
-    reg [15:0] read_data, write_data;
+    reg [15:0] write_data;
+    wire [15:0] read_data;
     reg N,V,Z;  
 
     reg [1:0] mem_cmd;
@@ -131,8 +132,21 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     // tristate enablers
     assign enable_read = (mem_cmd == `MREAD) & (mem_addr[8] == 1'b0);
     assign enable_SW = (mem_addr == 9'h140) & (mem_cmd == `MREAD);
-    assign read_data = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
-    assign read_data = enable_read ? dout : {16{1'bz}};
+    assign read_data = enable_SW ? {8'h00, SW[7:0]} :  enable_read ? dout : {16{1'bz}};
+
+    always_comb begin
+        
+        read_data = {16{1'bz}}
+
+        if ((mem_cmd == `MREAD)) begin
+            if (mem_addr[8] == 1'b0) begin
+                read_data = dout;
+            end else if (mem_addr == 9'h140) begin
+                read_data = 
+            end
+        end;
+
+    end
 
     always_ff @(posedge clk) begin
         if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
