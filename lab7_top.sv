@@ -102,10 +102,6 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     output reg [9:0] LEDR;
     output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
 
-    assign {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} = {6{7'b0}};
-
-    parameter filename = "test2.txt";
-
     reg [8:0] mem_addr;
     reg [15:0] read_data, write_data;
     reg N,V,Z;  
@@ -116,11 +112,9 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     assign reset = ~KEY[1];
 
     cpu CPU (clk, reset, mem_cmd, mem_addr, read_data, write_data, N,V,Z);
-
-    reg enable_read, write;
     reg [15:0] dout;
 
-    RAM #(16, 8, filename) MEM(
+    RAM #(16, 8, "data.txt") MEM(
         .clk(clk),
         .read_address(mem_addr [7:0]),
         .write_address(mem_addr [7:0]),
@@ -129,20 +123,16 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
         .dout(dout) );
 
     // assign read_data to a tristate driver
-    assign read_data = enable_read ? dout : {16{1'bx}};
+    wire enable_SW, enable_read, write;
 
     // Combinational logic for enable_read and write.
-    always_comb begin
-        enable_read = (mem_cmd == `MREAD) && (mem_addr[8] == 1'b0);
-        write = (mem_cmd == `MWRITE) && (mem_addr[8] == 1'b0);
-    end
+    assign write = (mem_cmd == `MWRITE) && (mem_addr[8] == 1'b0);
 
-    reg enable_SW;
-
-    assign SW_OUT = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
-    always_comb begin
-        enable_SW = (mem_addr == 9'h140) && (mem_cmd == `MREAD);
-    end
+    // tristate enablers
+    assign enable_read = (mem_cmd == `MREAD) & (mem_addr[8] == 1'b0);
+    assign enable_SW = (mem_addr == 9'h140) & (mem_cmd == `MREAD);
+    assign read_data = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
+    assign read_data = enable_read ? dout : {16{1'bz}};
 
     always_ff @(posedge clk) begin
         if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
@@ -154,6 +144,3 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 //    lightsControl lc (clk, mem_addr, mem_cmd, write_data, LEDR);
 
 endmodule
-
-
-

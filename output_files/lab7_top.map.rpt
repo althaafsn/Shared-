@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab7_top
-Mon Nov 27 18:21:07 2023
+Mon Nov 27 19:53:53 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,27 +19,26 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. General Register Statistics
  12. Registers Packed Into Inferred Megafunctions
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated
- 15. Parameter Settings for User Entity Instance: Top-level Entity: |lab7_top
- 16. Parameter Settings for User Entity Instance: cpu:CPU
- 17. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0
- 18. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg1
- 19. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg2
- 20. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg3
- 21. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg4
- 22. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg5
- 23. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg6
- 24. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg7
- 25. Parameter Settings for User Entity Instance: RAM:MEM
- 26. Parameter Settings for Inferred Entity Instance: RAM:MEM|altsyncram:mem_rtl_0
- 27. altsyncram Parameter Settings by Entity Instance
- 28. Port Connectivity Checks: "cpu:CPU|datapath:DP"
- 29. Port Connectivity Checks: "cpu:CPU|StateController:FSM"
- 30. Port Connectivity Checks: "cpu:CPU"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
- 34. Analysis & Synthesis Suppressed Messages
+ 14. Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_adr1:auto_generated
+ 15. Parameter Settings for User Entity Instance: cpu:CPU
+ 16. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0
+ 17. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg1
+ 18. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg2
+ 19. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg3
+ 20. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg4
+ 21. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg5
+ 22. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg6
+ 23. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg7
+ 24. Parameter Settings for User Entity Instance: RAM:MEM
+ 25. Parameter Settings for Inferred Entity Instance: RAM:MEM|altsyncram:mem_rtl_0
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "cpu:CPU|datapath:DP"
+ 28. Port Connectivity Checks: "cpu:CPU|StateController:FSM"
+ 29. Port Connectivity Checks: "cpu:CPU"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 27 18:21:07 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 27 19:53:53 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab7_top                                    ;
 ; Top-level Entity Name           ; lab7_top                                    ;
@@ -214,8 +213,8 @@ refer to the applicable agreement for further details.
 ; altrom.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                            ;         ;
 ; altram.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                            ;         ;
 ; altdpram.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                          ;         ;
-; db/altsyncram_vfr1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_vfr1.tdf                ;         ;
-; db/lab7_top.ram0_ram_621eace3.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/lab7_top.ram0_ram_621eace3.hdl.mif ;         ;
+; db/altsyncram_adr1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_adr1.tdf                ;         ;
+; db/lab7_top.ram0_ram_435e26e7.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/lab7_top.ram0_ram_435e26e7.hdl.mif ;         ;
 +---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -224,14 +223,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 160          ;
+; Estimate of Logic utilization (ALMs needed) ; 163          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 185          ;
+; Combinational ALUT usage for logic          ; 219          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 55           ;
-;     -- 5 input functions                    ; 56           ;
-;     -- 4 input functions                    ; 32           ;
-;     -- <=3 input functions                  ; 42           ;
+;     -- 6 input functions                    ; 63           ;
+;     -- 5 input functions                    ; 41           ;
+;     -- 4 input functions                    ; 49           ;
+;     -- <=3 input functions                  ; 66           ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 236          ;
 ;                                             ;              ;
@@ -243,8 +242,8 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 252          ;
-; Total fan-out                               ; 1844         ;
-; Average fan-out                             ; 3.24         ;
+; Total fan-out                               ; 1957         ;
+; Average fan-out                             ; 3.25         ;
 +---------------------------------------------+--------------+
 
 
@@ -253,13 +252,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+-----------------+--------------+
-; |lab7_top                                 ; 185 (6)             ; 236 (8)                   ; 4096              ; 0          ; 66   ; 0            ; |lab7_top                                                             ; lab7_top        ; work         ;
+; |lab7_top                                 ; 219 (24)            ; 236 (8)                   ; 4096              ; 0          ; 66   ; 0            ; |lab7_top                                                             ; lab7_top        ; work         ;
 ;    |RAM:MEM|                              ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM                                                     ; RAM             ; work         ;
 ;       |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM|altsyncram:mem_rtl_0                                ; altsyncram      ; work         ;
-;          |altsyncram_vfr1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated ; altsyncram_vfr1 ; work         ;
-;    |cpu:CPU|                              ; 179 (11)            ; 228 (25)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU                                                     ; cpu             ; work         ;
+;          |altsyncram_adr1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM|altsyncram:mem_rtl_0|altsyncram_adr1:auto_generated ; altsyncram_adr1 ; work         ;
+;    |cpu:CPU|                              ; 195 (11)            ; 228 (25)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU                                                     ; cpu             ; work         ;
 ;       |StateController:FSM|               ; 35 (35)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|StateController:FSM                                 ; StateController ; work         ;
-;       |datapath:DP|                       ; 124 (32)            ; 176 (48)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP                                         ; datapath        ; work         ;
+;       |datapath:DP|                       ; 140 (48)            ; 176 (48)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP                                         ; datapath        ; work         ;
 ;          |ALU:ALUModule|                  ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|ALU:ALUModule                           ; ALU             ; work         ;
 ;          |regfile:REGFILE|                ; 56 (56)             ; 128 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE                         ; regfile         ; work         ;
 ;             |vDFF:reg0|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0               ; vDFF            ; work         ;
@@ -281,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
 ; Name                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                   ;
 +------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
-; RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096 ; db/lab7_top.ram0_RAM_621eace3.hdl.mif ;
+; RAM:MEM|altsyncram:mem_rtl_0|altsyncram_adr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096 ; db/lab7_top.ram0_RAM_435e26e7.hdl.mif ;
 +------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
 
 
@@ -350,38 +349,28 @@ Encoding Type:  One-Hot
 +---------------------+-------------------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab7_top|cpu:CPU|datapath:DP|c[12]                 ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|Mux0                  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|Mux0                              ;
-; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |lab7_top|cpu:CPU|datapath:DP|B_in_ALU[3]           ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|Mux14 ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState  ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab7_top|cpu:CPU|datapath:DP|c[12]                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|Mux4                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|Mux2                             ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |lab7_top|cpu:CPU|datapath:DP|B_in_ALU[1]          ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|Mux6 ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------+
-; Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated ;
+; Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_adr1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------+
 ; Assignment                      ; Value              ; From ; To                   ;
 +---------------------------------+--------------------+------+----------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                    ;
 +---------------------------------+--------------------+------+----------------------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |lab7_top ;
-+----------------+-----------+---------------------------------------------+
-; Parameter Name ; Value     ; Type                                        ;
-+----------------+-----------+---------------------------------------------+
-; filename       ; test2.txt ; String                                      ;
-+----------------+-----------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------+
@@ -476,13 +465,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: RAM:MEM ;
-+----------------+-----------+-------------------------+
-; Parameter Name ; Value     ; Type                    ;
-+----------------+-----------+-------------------------+
-; data_width     ; 16        ; Signed Integer          ;
-; addr_width     ; 8         ; Signed Integer          ;
-; filename       ; test2.txt ; String                  ;
-+----------------+-----------+-------------------------+
++----------------+----------+--------------------------+
+; Parameter Name ; Value    ; Type                     ;
++----------------+----------+--------------------------+
+; data_width     ; 16       ; Signed Integer           ;
+; addr_width     ; 8        ; Signed Integer           ;
+; filename       ; data.txt ; String                   ;
++----------------+----------+--------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -529,7 +518,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                              ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
-; INIT_FILE                          ; db/lab7_top.ram0_RAM_621eace3.hdl.mif ; Untyped        ;
+; INIT_FILE                          ; db/lab7_top.ram0_RAM_435e26e7.hdl.mif ; Untyped        ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                ; Untyped        ;
 ; MAXIMUM_DEPTH                      ; 0                                     ; Untyped        ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                ; Untyped        ;
@@ -542,7 +531,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                 ; Untyped        ;
 ; WIDTH_ECCSTATUS                    ; 3                                     ; Untyped        ;
 ; DEVICE_FAMILY                      ; Cyclone V                             ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_vfr1                       ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_adr1                       ; Untyped        ;
 +------------------------------------+---------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -608,22 +597,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 16                          ;
 ;     SCLR              ; 5                           ;
 ;     plain             ; 13                          ;
-; arriav_lcell_comb     ; 186                         ;
+; arriav_lcell_comb     ; 220                         ;
 ;     arith             ; 26                          ;
 ;         1 data inputs ; 10                          ;
 ;         5 data inputs ; 16                          ;
-;     normal            ; 160                         ;
+;     normal            ; 194                         ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 10                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 32                          ;
-;         5 data inputs ; 40                          ;
-;         6 data inputs ; 55                          ;
+;         3 data inputs ; 46                          ;
+;         4 data inputs ; 49                          ;
+;         5 data inputs ; 25                          ;
+;         6 data inputs ; 63                          ;
 ; boundary_port         ; 66                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.40                        ;
+; Average LUT depth     ; 2.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -642,7 +631,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 27 18:20:53 2023
+    Info: Processing started: Mon Nov 27 19:53:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab7 -c lab7_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -675,12 +664,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab7_to
     Info (12023): Found entity 1: lab7_top File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 98
 Warning (10236): Verilog HDL Implicit Net warning at state_controller.sv(98): created implicit net for "selB" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
 Warning (10236): Verilog HDL Implicit Net warning at state_controller.sv(98): created implicit net for "selA" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
-Warning (10236): Verilog HDL Implicit Net warning at lab7_top.sv(142): created implicit net for "SW_OUT" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
 Info (12127): Elaborating entity "lab7_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at lab7_top.sv(142): object "SW_OUT" assigned a value but never read File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
-Warning (10230): Verilog HDL assignment warning at lab7_top.sv(142): truncated value with size 16 to match size of target (1) File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
 Warning (10034): Output port "LEDR[9..8]" at lab7_top.sv(102) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
-Info (12128): Elaborating entity "cpu" for hierarchy "cpu:CPU" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 118
+Warning (10034): Output port "HEX0" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Warning (10034): Output port "HEX1" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Warning (10034): Output port "HEX2" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Warning (10034): Output port "HEX3" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Warning (10034): Output port "HEX4" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Warning (10034): Output port "HEX5" at lab7_top.sv(103) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:CPU" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 114
 Info (10264): Verilog HDL Case Statement information at cpu.sv(152): all case item expressions in this case statement are onehot File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 152
 Info (12128): Elaborating entity "InstructionDecoder" for hierarchy "cpu:CPU|InstructionDecoder:Dec" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 76
 Info (12128): Elaborating entity "pc_controller" for hierarchy "cpu:CPU|pc_controller:PC_CON" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 84
@@ -697,7 +689,24 @@ Warning (10230): Verilog HDL assignment warning at shifter.sv(16): truncated val
 Info (12128): Elaborating entity "regfile" for hierarchy "cpu:CPU|datapath:DP|regfile:REGFILE" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 39
 Info (12128): Elaborating entity "vDFF" for hierarchy "cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/regfile.sv Line: 24
 Info (12128): Elaborating entity "ALU" for hierarchy "cpu:CPU|datapath:DP|ALU:ALUModule" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 40
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:MEM" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 129
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:MEM" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 123
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node "read_data[15]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[14]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[13]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[12]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[11]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[10]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[9]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[8]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[7]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[6]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[5]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[4]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[3]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[2]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[1]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
+    Warning (13048): Converted tri-state node "read_data[0]" into a selector File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 72
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "RAM:MEM|mem_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -714,7 +723,7 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/lab7_top.ram0_RAM_621eace3.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/lab7_top.ram0_RAM_435e26e7.hdl.mif
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
 Info (12130): Elaborated megafunction instantiation "RAM:MEM|altsyncram:mem_rtl_0"
 Info (12133): Instantiated megafunction "RAM:MEM|altsyncram:mem_rtl_0" with the following parameter:
@@ -732,10 +741,10 @@ Info (12133): Instantiated megafunction "RAM:MEM|altsyncram:mem_rtl_0" with the 
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/lab7_top.ram0_RAM_621eace3.hdl.mif"
+    Info (12134): Parameter "INIT_FILE" = "db/lab7_top.ram0_RAM_435e26e7.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vfr1.tdf
-    Info (12023): Found entity 1: altsyncram_vfr1 File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_vfr1.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_adr1.tdf
+    Info (12023): Found entity 1: altsyncram_adr1 File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_adr1.tdf Line: 27
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
@@ -786,28 +795,20 @@ Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/output_files/lab7_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 100
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 100
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
-Info (21057): Implemented 460 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 478 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 378 logic cells
+    Info (21061): Implemented 396 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Mon Nov 27 18:21:07 2023
-    Info: Elapsed time: 00:00:14
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Mon Nov 27 19:53:53 2023
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:11
 
 
