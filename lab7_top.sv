@@ -65,43 +65,46 @@
 
 // endmodule
 
-module switchControl (mem_addr, mem_cmd, SW, SW_OUT);
-    input [8:0] mem_addr;
-    input [1:0] mem_cmd;
-    input [9:0] SW;  // SW 7 - SW 0
-    output [15:0] SW_OUT;
+// module switchControl (mem_addr, mem_cmd, SW, SW_OUT);
+//     input [8:0] mem_addr;
+//     input [1:0] mem_cmd;
+//     input [9:0] SW;  // SW 7 - SW 0
+//     output [15:0] SW_OUT;
 
-    reg enable_SW;
+//     reg enable_SW;
 
-    assign SW_OUT = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
-    always_comb begin
-        enable_SW = (mem_addr == 9'h140) && (mem_cmd == `MREAD);
-    end
+//     assign SW_OUT = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
+//     always_comb begin
+//         enable_SW = (mem_addr == 9'h140) && (mem_cmd == `MREAD);
+//     end
 
+// endmodule
 
-endmodule
+// module lightsControl (clk, mem_addr, mem_cmd, write_data, LEDR);
+//     input clk;
+//     input [8:0] mem_addr;
+//     input [1:0] mem_cmd;
+//     input [15:0] write_data;
+//     output reg [9:0] LEDR;  // LEDR 7 - LEDR 0
 
-module lightsControl (clk, mem_addr, mem_cmd, write_data, LEDR);
-    input clk;
-    input [8:0] mem_addr;
-    input [1:0] mem_cmd;
-    input [15:0] write_data;
-    output reg [9:0] LEDR;  // LEDR 7 - LEDR 0
+//     always_ff @(posedge clk) begin
+//         if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
+//             LEDR[7:0] = write_data[7:0];
+//         end else LEDR[7:0] = LEDR[7:0];
+//     end
 
-    always_ff @(posedge clk) begin
-        if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
-            LEDR[7:0] = write_data[7:0];
-        end else LEDR[7:0] = LEDR[7:0];
-    end
-
-endmodule
+// endmodule
 
 module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 
     input [3:0] KEY;
     input [9:0] SW;
-    output [9:0] LEDR;
+    output reg [9:0] LEDR;
     output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+
+    assign {HEX0, HEX1, HEX2, HEX3, HEX4, HEX5} = {6{7'b0}};
+
+    parameter filename = "test2.txt";
 
     reg [8:0] mem_addr;
     reg [15:0] read_data, write_data;
@@ -117,7 +120,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     reg enable_read, write;
     reg [15:0] dout;
 
-    RAM #(16, 8, "data.txt") MEM(
+    RAM #(16, 8, filename) MEM(
         .clk(clk),
         .read_address(mem_addr [7:0]),
         .write_address(mem_addr [7:0]),
@@ -134,7 +137,20 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
         write = (mem_cmd == `MWRITE) && (mem_addr[8] == 1'b0);
     end
 
-    switchControl sc (mem_addr, mem_cmd, SW, read_data);
+    reg enable_SW;
+
+    assign SW_OUT = enable_SW ? {8'h00, SW[7:0]} : {16{1'bz}};
+    always_comb begin
+        enable_SW = (mem_addr == 9'h140) && (mem_cmd == `MREAD);
+    end
+
+    always_ff @(posedge clk) begin
+        if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin
+            LEDR[7:0] = write_data[7:0];
+        end else LEDR[7:0] = LEDR[7:0];
+    end
+
+//     switchControl sc (mem_addr, mem_cmd, SW, read_data);
 //    lightsControl lc (clk, mem_addr, mem_cmd, write_data, LEDR);
 
 endmodule

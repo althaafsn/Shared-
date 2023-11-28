@@ -1,4 +1,4 @@
-MOV r0, 0x0020 // set to a specific address
+MOV r0, #20 // set to a specific address
 MOV r1, #5 // mov value of 5 to r1
 ADD r2, r1, r1
 

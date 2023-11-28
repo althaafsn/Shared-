@@ -1,0 +1,819 @@
+Analysis & Synthesis report for lab7_top
+Mon Nov 27 18:21:07 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |lab7_top|cpu:CPU|StateController:FSM|currentState
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |lab7_top
+ 16. Parameter Settings for User Entity Instance: cpu:CPU
+ 17. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0
+ 18. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg1
+ 19. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg2
+ 20. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg3
+ 21. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg4
+ 22. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg5
+ 23. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg6
+ 24. Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg7
+ 25. Parameter Settings for User Entity Instance: RAM:MEM
+ 26. Parameter Settings for Inferred Entity Instance: RAM:MEM|altsyncram:mem_rtl_0
+ 27. altsyncram Parameter Settings by Entity Instance
+ 28. Port Connectivity Checks: "cpu:CPU|datapath:DP"
+ 29. Port Connectivity Checks: "cpu:CPU|StateController:FSM"
+ 30. Port Connectivity Checks: "cpu:CPU"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Nov 27 18:21:07 2023       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; lab7_top                                    ;
+; Top-level Entity Name           ; lab7_top                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 236                                         ;
+; Total pins                      ; 66                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 4,096                                       ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; lab7_top           ; lab7_top           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                   ;
++---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                 ; Library ;
++---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; modules/state_controller.sv           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv           ;         ;
+; modules/shifter.sv                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/shifter.sv                    ;         ;
+; modules/regfile.sv                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/regfile.sv                    ;         ;
+; modules/pc_controller.sv              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/pc_controller.sv              ;         ;
+; modules/MEM.sv                        ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/MEM.sv                        ;         ;
+; modules/lab6_top.sv                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab6_top.sv                   ;         ;
+; modules/instructionDecoder.sv         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/instructionDecoder.sv         ;         ;
+; modules/datapath.sv                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv                   ;         ;
+; modules/cpu.sv                        ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv                        ;         ;
+; modules/alu.sv                        ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/alu.sv                        ;         ;
+; lab7_top.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv                           ;         ;
+; altsyncram.tdf                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                        ;         ;
+; stratix_ram_block.inc                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                 ;         ;
+; lpm_mux.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                           ;         ;
+; lpm_decode.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                        ;         ;
+; aglobal181.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                        ;         ;
+; a_rdenreg.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                         ;         ;
+; altrom.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                            ;         ;
+; altram.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                            ;         ;
+; altdpram.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                          ;         ;
+; db/altsyncram_vfr1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_vfr1.tdf                ;         ;
+; db/lab7_top.ram0_ram_621eace3.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/lab7_top.ram0_ram_621eace3.hdl.mif ;         ;
++---------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 160          ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 185          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 55           ;
+;     -- 5 input functions                    ; 56           ;
+;     -- 4 input functions                    ; 32           ;
+;     -- <=3 input functions                  ; 42           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 236          ;
+;                                             ;              ;
+; I/O pins                                    ; 66           ;
+; Total MLAB memory bits                      ; 0            ;
+; Total block memory bits                     ; 4096         ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 252          ;
+; Total fan-out                               ; 1844         ;
+; Average fan-out                             ; 3.24         ;
++---------------------------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+-----------------+--------------+
+; |lab7_top                                 ; 185 (6)             ; 236 (8)                   ; 4096              ; 0          ; 66   ; 0            ; |lab7_top                                                             ; lab7_top        ; work         ;
+;    |RAM:MEM|                              ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM                                                     ; RAM             ; work         ;
+;       |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM|altsyncram:mem_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_vfr1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |lab7_top|RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated ; altsyncram_vfr1 ; work         ;
+;    |cpu:CPU|                              ; 179 (11)            ; 228 (25)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU                                                     ; cpu             ; work         ;
+;       |StateController:FSM|               ; 35 (35)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|StateController:FSM                                 ; StateController ; work         ;
+;       |datapath:DP|                       ; 124 (32)            ; 176 (48)                  ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP                                         ; datapath        ; work         ;
+;          |ALU:ALUModule|                  ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|ALU:ALUModule                           ; ALU             ; work         ;
+;          |regfile:REGFILE|                ; 56 (56)             ; 128 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE                         ; regfile         ; work         ;
+;             |vDFF:reg0|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0               ; vDFF            ; work         ;
+;             |vDFF:reg1|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg1               ; vDFF            ; work         ;
+;             |vDFF:reg2|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg2               ; vDFF            ; work         ;
+;             |vDFF:reg3|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg3               ; vDFF            ; work         ;
+;             |vDFF:reg4|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg4               ; vDFF            ; work         ;
+;             |vDFF:reg5|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg5               ; vDFF            ; work         ;
+;             |vDFF:reg6|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg6               ; vDFF            ; work         ;
+;             |vDFF:reg7|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg7               ; vDFF            ; work         ;
+;          |shifter:FileShifter|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|datapath:DP|shifter:FileShifter                     ; shifter         ; work         ;
+;       |pc_controller:PC_CON|              ; 9 (9)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab7_top|cpu:CPU|pc_controller:PC_CON                                ; pc_controller   ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                            ;
++------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
+; Name                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                   ;
++------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
+; RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096 ; db/lab7_top.ram0_RAM_621eace3.hdl.mif ;
++------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |lab7_top|cpu:CPU|StateController:FSM|currentState                                                                                                                                                                                                                                                                                                                                           ;
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+; Name               ; currentState.10010 ; currentState.10001 ; currentState.10000 ; currentState.01111 ; currentState.01110 ; currentState.01101 ; currentState.01100 ; currentState.01011 ; currentState.01010 ; currentState.01001 ; currentState.00001 ; currentState.00111 ; currentState.00110 ; currentState.00101 ; currentState.00100 ; currentState.00011 ; currentState.00010 ; currentState.01000 ;
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+; currentState.01000 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ;
+; currentState.00010 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 1                  ;
+; currentState.00011 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 1                  ;
+; currentState.00100 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 1                  ;
+; currentState.00101 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.00110 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.00111 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.00001 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01001 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01010 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01011 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01100 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01101 ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01110 ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.01111 ; 0                  ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.10000 ; 0                  ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.10001 ; 0                  ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
+; currentState.10010 ; 1                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 0                  ; 1                  ;
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------+
+; Registers Removed During Synthesis                               ;
++---------------------------------------------+--------------------+
+; Register name                               ; Reason for Removal ;
++---------------------------------------------+--------------------+
+; cpu:CPU|StateController:FSM|currentState~13 ; Lost fanout        ;
+; cpu:CPU|StateController:FSM|currentState~14 ; Lost fanout        ;
+; cpu:CPU|StateController:FSM|currentState~15 ; Lost fanout        ;
+; cpu:CPU|StateController:FSM|currentState~16 ; Lost fanout        ;
+; cpu:CPU|StateController:FSM|currentState~17 ; Lost fanout        ;
+; Total Number of Removed Registers = 5       ;                    ;
++---------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 236   ;
+; Number of registers using Synchronous Clear  ; 14    ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 218   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions   ;
++---------------------+-------------------+------+
+; Register Name       ; Megafunction      ; Type ;
++---------------------+-------------------+------+
+; RAM:MEM|dout[0..15] ; RAM:MEM|mem_rtl_0 ; RAM  ;
++---------------------+-------------------+------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab7_top|cpu:CPU|datapath:DP|c[12]                 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|Mux0                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|Mux0                              ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |lab7_top|cpu:CPU|datapath:DP|B_in_ALU[3]           ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |lab7_top|cpu:CPU|datapath:DP|regfile:REGFILE|Mux14 ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |lab7_top|cpu:CPU|StateController:FSM|currentState  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Source assignments for RAM:MEM|altsyncram:mem_rtl_0|altsyncram_vfr1:auto_generated ;
++---------------------------------+--------------------+------+----------------------+
+; Assignment                      ; Value              ; From ; To                   ;
++---------------------------------+--------------------+------+----------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                    ;
++---------------------------------+--------------------+------+----------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |lab7_top ;
++----------------+-----------+---------------------------------------------+
+; Parameter Name ; Value     ; Type                                        ;
++----------------+-----------+---------------------------------------------+
+; filename       ; test2.txt ; String                                      ;
++----------------+-----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU ;
++----------------+----------+--------------------------+
+; Parameter Name ; Value    ; Type                     ;
++----------------+----------+--------------------------+
+; filename       ; data.txt ; String                   ;
++----------------+----------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg2 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg3 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg4 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg5 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg6 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg7 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAM:MEM ;
++----------------+-----------+-------------------------+
+; Parameter Name ; Value     ; Type                    ;
++----------------+-----------+-------------------------+
+; data_width     ; 16        ; Signed Integer          ;
+; addr_width     ; 8         ; Signed Integer          ;
+; filename       ; test2.txt ; String                  ;
++----------------+-----------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: RAM:MEM|altsyncram:mem_rtl_0               ;
++------------------------------------+---------------------------------------+----------------+
+; Parameter Name                     ; Value                                 ; Type           ;
++------------------------------------+---------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                     ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                    ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                   ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                    ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                   ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                     ; Untyped        ;
+; OPERATION_MODE                     ; DUAL_PORT                             ; Untyped        ;
+; WIDTH_A                            ; 16                                    ; Untyped        ;
+; WIDTHAD_A                          ; 8                                     ; Untyped        ;
+; NUMWORDS_A                         ; 256                                   ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                          ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                  ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                  ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                  ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                  ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                  ; Untyped        ;
+; WIDTH_B                            ; 16                                    ; Untyped        ;
+; WIDTHAD_B                          ; 8                                     ; Untyped        ;
+; NUMWORDS_B                         ; 256                                   ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK0                                ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                          ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                  ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                  ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                  ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                  ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                  ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                  ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                     ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                     ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                  ; Untyped        ;
+; BYTE_SIZE                          ; 8                                     ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                              ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                  ; Untyped        ;
+; INIT_FILE                          ; db/lab7_top.ram0_RAM_621eace3.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                     ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                       ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                       ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                 ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                 ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                     ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                             ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_vfr1                       ; Untyped        ;
++------------------------------------+---------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                         ;
++-------------------------------------------+------------------------------+
+; Name                                      ; Value                        ;
++-------------------------------------------+------------------------------+
+; Number of entity instances                ; 1                            ;
+; Entity Instance                           ; RAM:MEM|altsyncram:mem_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                    ;
+;     -- WIDTH_A                            ; 16                           ;
+;     -- NUMWORDS_A                         ; 256                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                 ;
+;     -- WIDTH_B                            ; 16                           ;
+;     -- NUMWORDS_B                         ; 256                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                       ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                 ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                         ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                     ;
++-------------------------------------------+------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "cpu:CPU|datapath:DP" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; imm5 ; Input ; Info     ; Stuck at GND          ;
+; pc   ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cpu:CPU|StateController:FSM"                                                           ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; nsel[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cpu:CPU"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 236                         ;
+;     ENA               ; 193                         ;
+;     ENA SCLR          ; 9                           ;
+;     ENA SLD           ; 16                          ;
+;     SCLR              ; 5                           ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 186                         ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 10                          ;
+;         5 data inputs ; 16                          ;
+;     normal            ; 160                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 32                          ;
+;         5 data inputs ; 40                          ;
+;         6 data inputs ; 55                          ;
+; boundary_port         ; 66                          ;
+; stratixv_ram_block    ; 16                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.40                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Nov 27 18:20:53 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab7 -c lab7_top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file modules/state_controller.sv
+    Info (12023): Found entity 1: StateController File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 62
+Info (12021): Found 1 design units, including 1 entities, in source file modules/shifter.sv
+    Info (12023): Found entity 1: shifter File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/regfile.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_controller.sv
+    Info (12023): Found entity 1: pc_controller File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/pc_controller.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file modules/mem.sv
+    Info (12023): Found entity 1: RAM File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/MEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/lab7_autograder_check.sv
+    Info (12023): Found entity 1: lab7_check_tb File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab7_autograder_check.sv Line: 7
+Info (12021): Found 4 design units, including 4 entities, in source file modules/lab6_top.sv
+    Info (12023): Found entity 1: lab6_top File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab6_top.sv Line: 52
+    Info (12023): Found entity 2: input_iface File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab6_top.sv Line: 88
+    Info (12023): Found entity 3: vDFF File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab6_top.sv Line: 99
+    Info (12023): Found entity 4: sseg File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/lab6_top.sv Line: 109
+Info (12021): Found 1 design units, including 1 entities, in source file modules/instructiondecoder.sv
+    Info (12023): Found entity 1: InstructionDecoder File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/instructionDecoder.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file modules/datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file modules/cpu.sv
+    Info (12023): Found entity 1: cpu File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file modules/alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab7_top.sv
+    Info (12023): Found entity 1: lab7_top File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 98
+Warning (10236): Verilog HDL Implicit Net warning at state_controller.sv(98): created implicit net for "selB" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
+Warning (10236): Verilog HDL Implicit Net warning at state_controller.sv(98): created implicit net for "selA" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
+Warning (10236): Verilog HDL Implicit Net warning at lab7_top.sv(142): created implicit net for "SW_OUT" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
+Info (12127): Elaborating entity "lab7_top" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at lab7_top.sv(142): object "SW_OUT" assigned a value but never read File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
+Warning (10230): Verilog HDL assignment warning at lab7_top.sv(142): truncated value with size 16 to match size of target (1) File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 142
+Warning (10034): Output port "LEDR[9..8]" at lab7_top.sv(102) has no driver File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:CPU" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 118
+Info (10264): Verilog HDL Case Statement information at cpu.sv(152): all case item expressions in this case statement are onehot File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 152
+Info (12128): Elaborating entity "InstructionDecoder" for hierarchy "cpu:CPU|InstructionDecoder:Dec" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 76
+Info (12128): Elaborating entity "pc_controller" for hierarchy "cpu:CPU|pc_controller:PC_CON" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 84
+Warning (10230): Verilog HDL assignment warning at pc_controller.sv(10): truncated value with size 32 to match size of target (9) File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/pc_controller.sv Line: 10
+Info (12128): Elaborating entity "StateController" for hierarchy "cpu:CPU|StateController:FSM" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 117
+Warning (10036): Verilog HDL or VHDL warning at state_controller.sv(98): object "selB" assigned a value but never read File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
+Warning (10036): Verilog HDL or VHDL warning at state_controller.sv(98): object "selA" assigned a value but never read File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 98
+Info (10264): Verilog HDL Case Statement information at state_controller.sv(107): all case item expressions in this case statement are onehot File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 107
+Warning (10270): Verilog HDL Case Statement warning at state_controller.sv(258): incomplete case statement has no default case item File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 258
+Info (10264): Verilog HDL Case Statement information at state_controller.sv(258): all case item expressions in this case statement are onehot File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/state_controller.sv Line: 258
+Info (12128): Elaborating entity "datapath" for hierarchy "cpu:CPU|datapath:DP" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/cpu.sv Line: 143
+Info (12128): Elaborating entity "shifter" for hierarchy "cpu:CPU|datapath:DP|shifter:FileShifter" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at shifter.sv(16): truncated value with size 16 to match size of target (15) File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/shifter.sv Line: 16
+Info (12128): Elaborating entity "regfile" for hierarchy "cpu:CPU|datapath:DP|regfile:REGFILE" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 39
+Info (12128): Elaborating entity "vDFF" for hierarchy "cpu:CPU|datapath:DP|regfile:REGFILE|vDFF:reg0" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/regfile.sv Line: 24
+Info (12128): Elaborating entity "ALU" for hierarchy "cpu:CPU|datapath:DP|ALU:ALUModule" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/modules/datapath.sv Line: 40
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:MEM" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 129
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "RAM:MEM|mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 8
+        Info (286033): Parameter NUMWORDS_B set to 256
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/lab7_top.ram0_RAM_621eace3.hdl.mif
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Info (12130): Elaborated megafunction instantiation "RAM:MEM|altsyncram:mem_rtl_0"
+Info (12133): Instantiated megafunction "RAM:MEM|altsyncram:mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "8"
+    Info (12134): Parameter "NUMWORDS_B" = "256"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/lab7_top.ram0_RAM_621eace3.hdl.mif"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vfr1.tdf
+    Info (12023): Found entity 1: altsyncram_vfr1 File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/db/altsyncram_vfr1.tdf Line: 27
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 102
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 103
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/output_files/lab7_top.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 100
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 100
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv Line: 101
+Info (21057): Implemented 460 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 378 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Mon Nov 27 18:21:07 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:11
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/output_files/lab7_top.map.smsg.
+
+

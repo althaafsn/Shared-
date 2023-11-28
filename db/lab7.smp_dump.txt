@@ -1,0 +1,21 @@
+
+State Machine - |lab7_top|cpu:CPU|StateController:FSM|currentState
+Name currentState.10010 currentState.10001 currentState.10000 currentState.01111 currentState.01110 currentState.01101 currentState.01100 currentState.01011 currentState.01010 currentState.01001 currentState.00001 currentState.00111 currentState.00110 currentState.00101 currentState.00100 currentState.00011 currentState.00010 currentState.01000 
+currentState.01000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+currentState.00010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+currentState.00011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+currentState.00100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+currentState.00101 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+currentState.00110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+currentState.00111 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+currentState.00001 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+currentState.01001 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+currentState.01010 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+currentState.01011 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+currentState.01100 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+currentState.01101 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+currentState.01110 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+currentState.01111 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+currentState.10000 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+currentState.10001 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+currentState.10010 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

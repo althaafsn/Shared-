@@ -54,17 +54,39 @@ module lab7_check_tb;
     @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 3 *after* executing LDR R1, [R0]
 
     if (DUT.CPU.PC !== 9'h3) begin err = 1; $display("FAILED: PC should be 3."); $stop; end
-    if (DUT.CPU.DP.REGFILE.R0 !== 16'hABCD) begin err = 1; $display("FAILED: R1 should be 0xABCD. Looks like your LDR isn't working."); $stop; end
+    if (DUT.CPU.DP.REGFILE.R0 !== 16'h140) begin err = 1; $display("FAILED: R1 should be 0xABCD. Looks like your LDR isn't working."); $stop; end
 
     @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 4 *after* executing MOV R2, Y
 
+    SW = 9'b0000_0000_1;
+
     if (DUT.CPU.PC !== 9'h4) begin err = 1; $display("FAILED: PC should be 4."); $stop; end
-    if (DUT.CPU.DP.REGFILE.R2 !== 16'h6) begin err = 1; $display("FAILED: R2 should be 6."); $stop; end
+    if (DUT.CPU.DP.REGFILE.R2 !== 16'h1) begin err = 1; $display("FAILED: R2 should be 6."); $stop; end
 
     @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 5 *after* executing STR R1, [R2]
    
     if (DUT.CPU.PC !== 9'h5) begin err = 1; $display("FAILED: PC should be 5."); $stop; end
-    if (DUT.MEM.mem[6] !== 16'hABCD) begin err = 1; $display("FAILED: mem[6] wrong; looks like your STR isn't working"); $stop; end
+    if (DUT.CPU.DP.REGFILE.R3 !== 16'h2) begin err = 1; $display("FAILED: R3 should be 2"); $stop; end
+
+    @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 5 *after* executing STR R1, [R2]
+
+    if (DUT.CPU.PC !== 9'6) begin err = 1; $display("FAILED: PC should be 6."); $stop; end
+    if (DUT.CPU.DP.REGFILE.R1 !== 16'h0100) begin err = 1; $display("FAILED: R1 should be 0100"); $stop; end
+
+    @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 5 *after* executing STR R1, [R2]
+   
+    LEDR = 9'b0000_0000_0;
+
+    if (DUT.CPU.PC !== 9'h7) begin err = 1; $display("FAILED: PC should be 7."); $stop; end
+    if (DUT.CPU.DP.REGFILE.R1 !== 16'h0) begin err = 1; $display("FAILED: R1 should be 0"); $stop; end
+
+    @(posedge DUT.CPU.PC or negedge DUT.CPU.PC);  // wait here until PC changes; autograder expects PC set to 5 *after* executing STR R1, [R2]
+   
+    LEDR = 9'b0000_0000_0;
+
+    if (DUT.CPU.PC !== 9'h8) begin err = 1; $display("FAILED: PC should be 8."); $stop; end
+    if (DUT.write_data !== 16'h1) begin err = 1; $display("FAILED: write_data should be 1"); $stop; end
+    if (DUT.mem_addr !== 16'h0100) begin err = 1; $display("FAILED: mem_addr should be 0100"); $stop; end
 
     // NOTE: if HALT is working, PC won't change again...
 
