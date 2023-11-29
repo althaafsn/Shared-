@@ -101,7 +101,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     input [9:0] SW;
     output reg [9:0] LEDR;
     output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
-
+    
     reg [8:0] mem_addr;
     reg [15:0] write_data;
     wire [15:0] read_data;
@@ -115,6 +115,9 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
     cpu CPU (clk, reset, mem_cmd, mem_addr, read_data, write_data, N,V,Z);
     reg [15:0] dout;
 
+    // assign read_data to a tristate driver
+    wire enable_SW, enable_read, write;
+
     RAM #(16, 8, "data.txt") MEM(
         .clk(clk),
         .read_address(mem_addr [7:0]),
@@ -123,30 +126,27 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
         .din(write_data),
         .dout(dout) );
 
-    // assign read_data to a tristate driver
-    wire enable_SW, enable_read, write;
-
     // Combinational logic for enable_read and write.
     assign write = (mem_cmd == `MWRITE) && (mem_addr[8] == 1'b0);
 
     // tristate enablers
     assign enable_read = (mem_cmd == `MREAD) & (mem_addr[8] == 1'b0);
     assign enable_SW = (mem_addr == 9'h140) & (mem_cmd == `MREAD);
-    assign read_data = enable_SW ? {8'h00, SW[7:0]} :  enable_read ? dout : {16{1'bz}};
+    assign read_data = enable_SW ? {8'h00, SW[7:0]} : enable_read ? dout : {16{1'bz}};
 
-//    always_comb begin
-//        
-//        read_data = {16{1'bz}}
-//
-//        if ((mem_cmd == `MREAD)) begin
-//            if (mem_addr[8] == 1'b0) begin
-//                read_data = dout;
-//            end else if (mem_addr == 9'h140) begin
-//                read_data = 
-//            end
-//        end;
-//
-//    end
+    // always_comb begin
+        
+    //     read_data = {16{1'bz}}
+
+    //     if ((mem_cmd == `MREAD)) begin
+    //         if (mem_addr[8] == 1'b0) begin
+    //             read_data = dout;
+    //         end else if (mem_addr == 9'h140) begin
+    //             read_data = 
+    //         end
+    //     end;
+
+    // end
 
     always_ff @(posedge clk) begin
         if((mem_addr == 9'h100) && (mem_cmd == `MWRITE)) begin

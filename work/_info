@@ -10,50 +10,50 @@ cModel Technology
 dD:/UBC/Courses/2023W1/CPEN_211/LPT 3/LPT 3 2023
 vALU
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1701076039
+Z1 !s110 1701156487
 !i10b 1
 !s100 F<JBgPQZART7_5]CLPL<]1
-IS?P0oj_n0PB4KH[i]kWnc3
+I`JE00G9]Nh9mVX0F=ckZj1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 alu_sv_unit
 S1
-Z3 dD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-
-Z4 w1701024879
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv
+Z3 dC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-
+Z4 w1701048914
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv
 L0 1
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1701076039.000000
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/alu.sv|
+Z6 !s108 1701156487.000000
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv|
 !i113 1
 Z7 o-work work -sv
 Z8 tCvgOpt 0
 n@a@l@u
 vALU_test
 R0
-Z9 !s110 1701076041
+R1
 !i10b 1
 !s100 i@46NChA^Zc5Rmn8TM<NI3
-Il8Dgg8ZOYNm=X?_KE0Kd;2
+I==9[3lW>1gbj@e0]dnbC71
 R2
 !s105 alu_tb_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv
 L0 6
 R5
 r1
 !s85 0
 31
-Z10 !s108 1701076041.000000
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/alu_tb.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv|
 !i113 1
 R7
 R8
@@ -63,265 +63,337 @@ R0
 R1
 !i10b 1
 !s100 CR<3fd2L0`XD9B07L:Znb0
-I@V7B`0iP4zn`1?UdGKTBR0
+I]bRbG4XLYoLmA9n6lEA593
 R2
 !s105 cpu_sv_unit
 S1
 R3
-w1701073134
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv
+Z9 w1701111928
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv
 L0 16
 R5
 r1
 !s85 0
 31
 R6
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/cpu.sv|
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv|
 !i113 1
 R7
 R8
 vcpuTest
 R0
-R9
+R1
 !i10b 1
 !s100 oF;oi_=Yi4aQfMhJNT1j20
-I>HJD8`70ZTDRDYJU:]o6S3
+IlG;NJM9>mz3o>OjTl3<oE0
 R2
 !s105 cpu_tb_gate_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv
 L0 25
 R5
 r1
 !s85 0
 31
-R10
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb_gate.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv|
 !i113 1
 R7
 R8
 ncpu@test
 vcpuTest_RAM
 R0
-R9
+R1
 !i10b 1
 !s100 16hVIj=KCc3NTIikh<8EW0
-IK?bgXM[AkWSL`U5V8RW<W3
+IOoA4[X]l6gP^m4I0B:Q9Q0
 R2
 !s105 cpu_tb_sv_unit
 S1
 R3
-w1701066598
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv
+R9
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv
 L0 737
 R5
 r1
 !s85 0
 31
-R10
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/cpu_tb.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv|
 !i113 1
 R7
 R8
 ncpu@test_@r@a@m
 vdatapath
 R0
-Z11 !s110 1701076040
+R1
 !i10b 1
 !s100 =jF:5mN;0b43Q<c==RK3L0
-IbPRVB]]F;kfB:]<Q<1P5R1
+ISa;6QY0f6FP>iZ71P5g:G0
 R2
 !s105 datapath_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv
 L0 12
 R5
 r1
 !s85 0
 31
-Z12 !s108 1701076040.000000
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/datapath.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv|
 !i113 1
 R7
 R8
 vdatapath_tb
 R0
-R9
+R1
 !i10b 1
 !s100 9g;UjAG1S=H3]EJGmaOTX2
-I3Zi]LO?cEHk>12J[=0GaB2
+InT;0Y:@ZCfWn^bYMNAzOW0
 R2
 !s105 datapath_tb_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv
 L0 38
 R5
 r1
 !s85 0
 31
-R10
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/datapath_tb.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv|
 !i113 1
 R7
 R8
 vinput_iface
 R0
-R11
+Z10 !s110 1701156488
 !i10b 1
 !s100 m:haSVhf5F=jKJkSU:z1T2
-I:K9Z3WNZCSbKBDo58gJad3
+Io]If[4jzD3^X5:R`NDWVj3
 R2
-Z13 !s105 lab6_top_sv_unit
+Z11 !s105 lab6_top_sv_unit
 S1
 R3
 R4
-Z14 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
-Z15 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv
+Z12 8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv
+Z13 FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv
 L0 88
 R5
 r1
 !s85 0
 31
-R12
-Z16 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab6_top.sv|
+Z14 !s108 1701156488.000000
+Z15 !s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv|
+Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv|
 !i113 1
 R7
 R8
 vInstructionDecoder
 R0
-R11
+R1
 !i10b 1
 !s100 9m2k@gRY0DULaQCFLFcUW0
-I]M:F1DhHHSlfbO@ZD]lKH1
+InCMGKIUF2c1W@Pn`bUdQ13
 R2
 !s105 instructionDecoder_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R12
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/instructionDecoder.sv|
+R6
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv|
 !i113 1
 R7
 R8
 n@instruction@decoder
 vlab6_top
 R0
-R11
+R10
 !i10b 1
 !s100 [nKjfk`4cQNg2aemmW:a83
-IONlk1e7YRAT7m<>@W>[382
+Igl6iijSZZ7ei34Q=2ncFH3
 R2
-R13
+R11
 S1
 R3
 R4
-R14
-R15
+R12
+R13
 L0 52
 R5
 r1
 !s85 0
 31
-R12
+R14
+R15
 R16
-R17
 !i113 1
 R7
 R8
 vlab7_check_tb
 R0
-R11
+R10
 !i10b 1
 !s100 G><iLm_;M3mT=[TJ7n0`30
-I[V<5F0c6kUD8z>kYPF90G3
+I9::fZ3;SX1hXb5NAW[3MN2
 R2
 !s105 lab7_autograder_check_sv_unit
 S1
 R3
-w1701070231
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv
+R9
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv
 L0 7
 R5
 r1
 !s85 0
 31
-R12
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/lab7_autograder_check.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv|
+!i113 1
+R7
+R8
+vlab7_tb
+R0
+R10
+!i10b 1
+!s100 ZS=gdD>:X=zA7ek;ifdH]2
+ITCHJdOMh8XC;T90F7Fh1`3
+R2
+!s105 lab7_top_tb_b_sv_unit
+S1
+R3
+Z17 w1701147740
+Z18 8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv
+Z19 FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R14
+Z20 !s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv|
+Z21 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv|
+!i113 1
+R7
+R8
+vlab7_tb_2
+R0
+R10
+!i10b 1
+!s100 1g6ER0e:O^=ER=P4I6DD<0
+I0aeaVXTThFeSPg=FnSm3_2
+R2
+!s105 lab7_top_tb_sv_unit
+S1
+R3
+w1701156482
+8C:\Users\altha\OneDrive - UBC\UBC\2ndYear\CPEN 211\Lab7_shared\Shared-\lab7_top_tb.sv
+FC:\Users\altha\OneDrive - UBC\UBC\2ndYear\CPEN 211\Lab7_shared\Shared-\lab7_top_tb.sv
+L0 7
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:\Users\altha\OneDrive - UBC\UBC\2ndYear\CPEN 211\Lab7_shared\Shared-\lab7_top_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\altha\OneDrive - UBC\UBC\2ndYear\CPEN 211\Lab7_shared\Shared-\lab7_top_tb.sv|
 !i113 1
 R7
 R8
 vlab7_top
 R0
-R9
+R10
 !i10b 1
-!s100 hoUzK74oJHY::AjP[`^X41
-I^[X5D7dIIER>nLES1547L3
+!s100 [S34QMiX<QlF3G<RVSj012
+IDb;=Rm]P`0=`9WMiL]T;<1
 R2
-Z18 !s105 lab7_top_sv_unit
+Z22 !s105 lab7_top_sv_unit
 S1
 R3
-Z19 w1701076034
-Z20 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
-Z21 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
+w1701153849
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv
 L0 98
 R5
 r1
 !s85 0
 31
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv|
+!i113 1
+R7
+R8
+Xlab7_top_tb_b_sv_unit
+R0
 R10
-Z22 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
-Z23 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
+!i10b 1
+!s100 hcX4G@FAJX7_CnH56<3SQ0
+I8I4903Cn=Ub>Oaa]`<mK_1
+V8I4903Cn=Ub>Oaa]`<mK_1
+!i103 1
+S1
+R3
+R17
+R18
+R19
+Z23 L0 83
+R5
+r1
+!s85 0
+31
+R14
+R20
+R21
 !i113 1
 R7
 R8
 vlightsControl
 R0
-R9
+Z24 !s110 1701076041
 !i10b 1
 !s100 7l]iE:lYH;[1I[C[MZ>zG3
 ITXg0h<^WBE@ZUT4XSBUAP0
 R2
-R18
+R22
 S1
-R3
-R19
-R20
-R21
-L0 83
+Z25 dD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-
+Z26 w1701076034
+Z27 8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
+Z28 FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv
+R23
 R5
 r1
 !s85 0
 31
-R10
-R22
-R23
+Z29 !s108 1701076041.000000
+Z30 !s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
+Z31 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/lab7_top.sv|
 !i113 1
 R7
 R8
@@ -333,240 +405,240 @@ R0
 !s100 j4fzh7PT?5hXD18mMmnm_1
 I4khBLB3Y[gBDk3>o;Bol03
 R2
-R18
+R22
 S1
-R3
+R25
 w1701066918
-R20
-R21
+R27
+R28
 L0 37
 R5
 r1
 !s85 0
 31
 !s108 1701066925.000000
-R22
-R23
+R30
+R31
 !i113 1
 R7
 R8
 n@memory_@control
 vpc_controller
 R0
-Z24 !s110 1701076038
+R10
 !i10b 1
 !s100 e^gDRGB4aiPAQJ@mh2ahD2
-IzAS[a@V<hI5njlJc_KTPo2
+IePfK<cHR?n6QWWe_TFDQY3
 R2
 !s105 pc_controller_sv_unit
 S1
 R3
-w1701068819
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv
+R9
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv
 L0 3
 R5
 r1
 !s85 0
 31
-Z25 !s108 1701076038.000000
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/pc_controller.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv|
 !i113 1
 R7
 R8
 vRAM
 R0
-R24
+R10
 !i10b 1
 !s100 3_giZ3RmWC5H06CnTcN@;0
-IB<KBz5ZX6AXFmPoUEW`9D2
+I2ge3I@?<2iOThXMEICzRe0
 R2
 !s105 MEM_sv_unit
 S1
 R3
-w1701026304
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv
+R4
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R25
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/MEM.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv|
 !i113 1
 R7
 R8
 n@r@a@m
 vregfile
 R0
-R1
+R10
 !i10b 1
 !s100 g_Onz3TV:J>`=lAo9?o[21
-IYd1c>EhEa4bZM?0CcLIhe2
+Ih9M8_`T<ZeWL;M<7DCbn?0
 R2
 !s105 regfile_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R25
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/regfile.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv|
 !i113 1
 R7
 R8
 vshifter
 R0
-R1
+R10
 !i10b 1
 !s100 zXJAAU`PT@A?4QcW`Mf3]2
-I5A0Z0`4iVd54JVz[=L`OX0
+I>74MaO@VDR7@L^Rj;4i6J3
 R2
 !s105 shifter_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/shifter.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv|
 !i113 1
 R7
 R8
 vshifter_tb
 R0
-R11
+R10
 !i10b 1
 !s100 Nk[8JKa1;Y_gj^_gO6VY`2
-IgOKQEbKflhH2Z_0^JIIPY1
+IQ^[T77o>TCSo`W;ead>fN3
 R2
 !s105 shifter_tb_sv_unit
 S1
 R3
 R4
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv
 L0 2
 R5
 r1
 !s85 0
 31
-R12
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/testbench/shifter_tb.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv|
 !i113 1
 R7
 R8
 vsseg
 R0
-R11
+R10
 !i10b 1
 !s100 CT;a5?>l9eFJGI8VL6Ch11
-IL=6VoD[X?;@oK[ggl1a_b3
+IDGb7?]3PE<Q?FQ7[[@=bG3
 R2
-R13
+R11
 S1
 R3
 R4
-R14
-R15
+R12
+R13
 L0 109
 R5
 r1
 !s85 0
 31
-R12
+R14
+R15
 R16
-R17
 !i113 1
 R7
 R8
 vStateController
 R0
-R1
+R10
 !i10b 1
-!s100 BoSG9F?^zT[e[>K<[V4>51
-IgDYB^DJ:IAQZ23GTj8;oo2
+!s100 2nQMZ?gAJNJ@A_9O3dXk@1
+IXf2c6?Y?[?_@@k`Km?c0J2
 R2
 !s105 state_controller_sv_unit
 S1
 R3
-w1701074135
-8D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
-FD:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv
+w1701146972
+8C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv
+FC:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv
 L0 62
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/UBC/Courses/2023W1/CPEN_211/Lab 7/Shared-/modules/state_controller.sv|
+R14
+!s107 C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv|
 !i113 1
 R7
 R8
 n@state@controller
 vswitchControl
 R0
-R9
+R24
 !i10b 1
 !s100 VRPM8Um<n?JU^BgzCiYYh1
 I;=QbMTE76hzDAIMXTl_b80
 R2
-R18
+R22
 S1
-R3
-R19
-R20
-R21
+R25
+R26
+R27
+R28
 L0 68
 R5
 r1
 !s85 0
 31
-R10
-R22
-R23
+R29
+R30
+R31
 !i113 1
 R7
 R8
 nswitch@control
 vvDFF
 R0
-R11
+R10
 !i10b 1
 !s100 0]ab@Ahg`zi5hR[7X6FBb3
-IE8oemmEE`]zC[]<F01@P>3
+IKoPmC;7`>23Y;]L?amRW_2
 R2
-R13
+R11
 S1
 R3
 R4
-R14
-R15
+R12
+R13
 L0 99
 R5
 r1
 !s85 0
 31
-R12
+R14
+R15
 R16
-R17
 !i113 1
 R7
 R8

@@ -1,0 +1,135 @@
+{C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpuTest
+-- Compiling module cpuTest_RAM
+
+Top level modules:
+	cpuTest
+	cpuTest_RAM
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu_tb_gate.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpuTest
+
+Top level modules:
+	cpuTest
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/regfile.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv} {2 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_tb
+** Warning: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv(83): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top_tb_b.sv(83): (vlog-2284) Empty $unit scope found.
+
+Top level modules:
+	lab7_tb
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/cpu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_top.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_top
+
+Top level modules:
+	lab7_top
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/shifter_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shifter_tb
+
+Top level modules:
+	shifter_tb
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/state_controller.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module StateController
+
+Top level modules:
+	StateController
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/pc_controller.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pc_controller
+
+Top level modules:
+	pc_controller
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/MEM.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_test
+
+Top level modules:
+	ALU_test
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab6_top.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab6_top
+-- Compiling module input_iface
+-- Compiling module vDFF
+-- Compiling module sseg
+
+Top level modules:
+	lab6_top
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/instructionDecoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstructionDecoder
+
+Top level modules:
+	InstructionDecoder
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/lab7_autograder_check.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_check_tb
+
+Top level modules:
+	lab7_check_tb
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv} {1 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/alu.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv} {2 {vlog -work work -sv -stats=none {C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath_tb
+** Warning: C:/Users/altha/OneDrive - UBC/UBC/2ndYear/CPEN 211/Lab7_shared/Shared-/datapath_tb.sv(413): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	datapath_tb
+
+} {} {}}
